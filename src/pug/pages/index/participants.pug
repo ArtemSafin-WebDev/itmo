@@ -1,0 +1,33 @@
+section.section.participants
+  .site-container.grid-container.participants__container
+    .participants__content-block
+      h2.participants__heading
+        | <span>Принять</span> участие может каждый
+      .participants__text-container
+        .participants__text-container-block
+          span.participants__courage Смелее!
+        .participants__text-container-block
+          p.participants__text
+            | В&nbsp;Neva CTF могут участвовать команды из&nbsp;любых школ.
+          p.participants__text
+            | Состав команды: от&nbsp;2&nbsp;до&nbsp;4&nbsp;участников.
+          p.participants__small-text
+            | Чтобы сразиться с&nbsp;соперниками из&nbsp;других команд, необязательно быть профессионалом: задания подойдут как для продвинутых CTF&nbsp;&mdash;&nbsp;игроков, так и&nbsp;для новичков.
+    .participants__content-block
+      .participants__slider-wrapper
+        .slider-nav.participants__slider-nav
+          button.slider-nav__btn.button-reset.js-participants-btn-prev
+            +icon-mono("shevron-left")(width="11" height="29" class="slider-nav__btn-icon")
+          button.slider-nav__btn.button-reset.js-participants-btn-next
+            +icon-mono("shevron-right")(width="11" height="29" class="slider-nav__btn-icon")
+        .swiper.participants__slider
+          .swiper-wrapper
+            img.participants__slider-item.swiper-slide(src="images/participants/slider-img.jpg" alt="")
+            img.participants__slider-item.swiper-slide(src="images/participants/slider-img3.jpg" alt="")
+            img.participants__slider-item.swiper-slide(src="images/participants/slider-img4.jpg" alt="")
+      .participants__slider2-wrapper
+        .swiper.participants__slider2
+          .swiper-wrapper
+            img.participants__slider2-item.swiper-slide(src="images/participants/slider-img3.jpg" alt="")
+            img.participants__slider2-item.swiper-slide(src="images/participants/slider-img4.jpg" alt="")
+            img.participants__slider2-item.swiper-slide(src="images/participants/slider-img3.jpg" alt="")

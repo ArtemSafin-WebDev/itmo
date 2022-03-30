@@ -75,7 +75,10 @@
 		"vinyl-source-stream": "^2.0.0"
 	},
 	"dependencies": {
+		"dayjs": "^1.11.0",
+		"gsap": "^3.10.0",
 		"reset-css": "^5.0.1",
+		"swiper": "^8.0.7",
 		"vanilla-lazyload": "^17.6.1"
 	}
 }

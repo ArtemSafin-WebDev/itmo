@@ -1,0 +1,125 @@
+.participants {
+  &__content-block {
+    grid-column: 6 span;
+    display: flex;
+    flex-direction: column;
+
+    &:nth-child(2) {
+      flex-direction: row;
+    }
+  }
+
+  &__heading {
+    position: relative;
+    font: var(--font-title-2);
+    text-transform: uppercase;
+    margin-bottom: 6rem;
+    padding-top: 6rem;
+
+    span {
+      position: relative;
+      padding-left: 10rem;
+
+      &::before {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        width: 4rem;
+        height: 4rem;
+        background-color: var(--color-grey-900);
+        border-radius: 50%;
+        transform: translateY(-50%);
+        content: "";
+      }
+    }
+  }
+
+  &__text-container {
+    display: grid;
+    grid-template-columns: 2fr 4fr;
+    column-gap: var(--grid-offset);
+    flex-grow: 1;
+  }
+
+  &__text-container-block {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  &__text {
+    font: var(--font-roboto);
+    margin-bottom: 2rem;
+    max-width: 39rem;
+
+    &:nth-last-of-type(1) {
+      margin-bottom: 0;
+    }
+  }
+
+  &__small-text {
+    max-width: 33.1rem;
+    margin-top: auto;
+  }
+
+  &__courage {
+    position: relative;
+    display: inline-block;
+    margin-top: auto;
+    margin-bottom: 5rem;
+
+    &::before {
+      position: absolute;
+      left: calc(100% + 0.3rem);
+      bottom: -1rem;
+      width: 5.2rem;
+      height: 6.8rem;
+      background-image: url(../images/participants/courage.svg);
+      background-position: center;
+      background-size: cover;
+      content: "";
+    }
+  }
+
+  &__slider-wrapper {
+    position: relative;
+    min-width: 0;
+    width: 52rem;
+    height: 71.9rem;
+    overflow: hidden;
+    flex-shrink: 0;
+  }
+
+  &__slider2-wrapper {
+    position: relative;
+    min-width: 0;
+    height: 48.3rem;
+    width: 35.1rem;
+    flex-shrink: 0;
+    margin-top: 7rem;
+    margin-left: 9rem;
+
+    &::before {
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 2;
+      width: 100%;
+      height: 100%;
+      background: rgba(37, 37, 68, 0.8);
+      content: "";
+    }
+  }
+
+  &__slider2-item {
+    width: 100%;
+    height: 100%;
+  }
+
+  &__slider-nav {
+    position: absolute;
+    left: 1.6rem;
+    bottom: 1.6rem;
+    z-index: 5;
+  }
+}

@@ -1,3 +1,49 @@
-section.hero
-	.site-container
-		h1 Hero Heading
+section.intro.section
+  .site-container.intro__container
+    .intro_blur
+    .intro_blur2
+    .intro_bg-svg
+    h1.intro__heading Neva CTF
+    .intro__content.grid-container
+      .intro__content-block
+      .intro__content-block
+        .intro__content-block-item
+          p.intro__content-txt Neva CTF – командное соревнование по информационной безопасности для школьников
+          .intro__content-btn-wrapper
+            +button("Заполнить анкету")(class="intro__content-btn")
+            p.intro__content-days-left-txt Дней до мероприятия
+            span.intro__content-days-left.js-days-left 40
+        .intro__content-block-item
+          p.intro__content-date 23
+          span.intro__content-date-year Апрель <br> 2022
+    .intro__content.grid-container
+      .intro__content-block
+        span.intro__content-small-legend Организаторы
+      .intro__content-block
+        .intro__content-block-item
+          .intro__content-organizers
+            .intro__content-organizers-item
+              p
+                | Международный научно-образовательный центр &laquo;Безопасность и&nbsp;надежность критических цифровых технологий&raquo; Университета ИТМО
+              +icon-mono("logo-second")(width="31" height="31" class="intro__content-organizers-icon")
+            .intro__content-organizers-item
+              p
+                | АРСИБ&nbsp;&mdash; Ассоциация руководителей служб информационной безопасности
+              +icon-mono("logo-arsib")(width="60" height="31" class="intro__content-organizers-icon")
+        .intro__content-block-item
+          p.intro__content-adress Санкт-Петербург, Песочная набережная, д. 14
+          a.intro__content-link(href="tel:+78123123269") +7 (812) 312–32–69
+          .intro__content-socials-wrapper
+            ul.social
+              li.social__item
+                a.social__link(href="/")
+                  +icon-mono("tg")(class="social__link-icon" width="14" height="14")
+              li.social__item
+                a.social__link(href="/")
+                  +icon-mono("vk")(class="social__link-icon" width="14" height="14")
+              li.social__item
+                a.social__link(href="/")
+                  +icon-mono("wp")(class="social__link-icon" width="14" height="14")
+            a.intro__content-regulation(href="/")
+              +icon-mono("file")(width="27" height="27" class="intro__content-regulation-icon")
+              | Регламент проведения

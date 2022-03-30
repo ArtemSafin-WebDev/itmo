@@ -15,17 +15,158 @@
     <title>Главная | Название сайта</title>
     <link rel="stylesheet" href="./css/style.min.css?v=0.0.0.0">
   </head>
-  <body class="page-home">
+  <body class="page-home page-body">
+    <div class="preloader">
+      <svg class="icon icon-logo preloader__logo" width="200" height="22">
+        <use xlink:href="images/sprites/sprite-multi.svg#logo"></use>
+      </svg>
+    </div>
     <div class="page-wrapper">
       <header class="header">
         <div class="site-container">
-          <h1>header</h1>
+          <div class="header__container grid-container">
+            <div class="header__block"><a class="logo" href="/">
+                <svg class="icon icon-logo logo__icon" width="200" height="22">
+                  <use xlink:href="images/sprites/sprite-multi.svg#logo"></use>
+                </svg></a></div>
+            <div class="header__block"><a class="header__second-logo" href="/">
+                <svg class="icon icon-logo-second header__second-logo-icon" width="27" height="27">
+                  <use xlink:href="images/sprites/sprite-mono.svg#logo-second"></use>
+                </svg>
+                <p>МНОЦ &laquo;Безопасность и&nbsp;надежность критических цифровых технологий&raquo;</p></a></div>
+            <div class="header__block">
+              <nav class="header__nav">
+                <ul class="header__nav-list">
+                  <li class="header__nav-item"><a class="header__nav-link" href="/">Организаторы</a></li>
+                  <li class="header__nav-item"><a class="header__nav-link" href="/">Подготовка</a></li>
+                  <li class="header__nav-item"><a class="header__nav-link" href="/">Призы</a></li>
+                  <li class="header__nav-item"><a class="header__nav-link" href="/">Ответы на вопросы</a></li>
+                  <li class="header__nav-item"><a class="header__nav-link" href="/">Контакты</a></li>
+                </ul>
+              </nav>
+              <button class="button-reset button">Заполнить анкету</button>
+            </div>
+          </div>
         </div>
       </header>
       <main class="page-main main">
-        <section class="hero">
+        <section class="intro section">
+          <div class="site-container intro__container">
+            <div class="intro_blur"></div>
+            <div class="intro_blur2"></div>
+            <div class="intro_bg-svg"></div>
+            <h1 class="intro__heading">Neva CTF</h1>
+            <div class="intro__content grid-container">
+              <div class="intro__content-block"></div>
+              <div class="intro__content-block">
+                <div class="intro__content-block-item">
+                  <p class="intro__content-txt">Neva CTF – командное соревнование по информационной безопасности для школьников</p>
+                  <div class="intro__content-btn-wrapper">
+                    <button class="button-reset button intro__content-btn">Заполнить анкету</button>
+                    <p class="intro__content-days-left-txt">Дней до мероприятия</p><span class="intro__content-days-left js-days-left">40</span>
+                  </div>
+                </div>
+                <div class="intro__content-block-item">
+                  <p class="intro__content-date">23</p><span class="intro__content-date-year">Апрель <br> 2022</span>
+                </div>
+              </div>
+            </div>
+            <div class="intro__content grid-container">
+              <div class="intro__content-block"><span class="intro__content-small-legend">Организаторы</span></div>
+              <div class="intro__content-block">
+                <div class="intro__content-block-item">
+                  <div class="intro__content-organizers">
+                    <div class="intro__content-organizers-item">
+                      <p>Международный научно-образовательный центр &laquo;Безопасность и&nbsp;надежность критических цифровых технологий&raquo; Университета ИТМО</p>
+                      <svg class="icon icon-logo-second intro__content-organizers-icon" width="31" height="31">
+                        <use xlink:href="images/sprites/sprite-mono.svg#logo-second"></use>
+                      </svg>
+                    </div>
+                    <div class="intro__content-organizers-item">
+                      <p>АРСИБ&nbsp;&mdash; Ассоциация руководителей служб информационной безопасности</p>
+                      <svg class="icon icon-logo-arsib intro__content-organizers-icon" width="60" height="31">
+                        <use xlink:href="images/sprites/sprite-mono.svg#logo-arsib"></use>
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+                <div class="intro__content-block-item">
+                  <p class="intro__content-adress">Санкт-Петербург, Песочная набережная, д. 14</p><a class="intro__content-link" href="tel:+78123123269">+7 (812) 312–32–69</a>
+                  <div class="intro__content-socials-wrapper">
+                    <ul class="social">
+                      <li class="social__item"><a class="social__link" href="/">
+                          <svg class="icon icon-tg social__link-icon" width="14" height="14">
+                            <use xlink:href="images/sprites/sprite-mono.svg#tg"></use>
+                          </svg></a></li>
+                      <li class="social__item"><a class="social__link" href="/">
+                          <svg class="icon icon-vk social__link-icon" width="14" height="14">
+                            <use xlink:href="images/sprites/sprite-mono.svg#vk"></use>
+                          </svg></a></li>
+                      <li class="social__item"><a class="social__link" href="/">
+                          <svg class="icon icon-wp social__link-icon" width="14" height="14">
+                            <use xlink:href="images/sprites/sprite-mono.svg#wp"></use>
+                          </svg></a></li>
+                    </ul><a class="intro__content-regulation" href="/">
+                      <svg class="icon icon-file intro__content-regulation-icon" width="27" height="27">
+                        <use xlink:href="images/sprites/sprite-mono.svg#file"></use>
+                      </svg>Регламент проведения</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="section participants">
+          <div class="site-container grid-container participants__container">
+            <div class="participants__content-block">
+              <h2 class="participants__heading"><span>Принять</span> участие может каждый</h2>
+              <div class="participants__text-container">
+                <div class="participants__text-container-block"><span class="participants__courage">Смелее!</span></div>
+                <div class="participants__text-container-block">
+                  <p class="participants__text">В&nbsp;Neva CTF могут участвовать команды из&nbsp;любых школ.</p>
+                  <p class="participants__text">Состав команды: от&nbsp;2&nbsp;до&nbsp;4&nbsp;участников.</p>
+                  <p class="participants__small-text">Чтобы сразиться с&nbsp;соперниками из&nbsp;других команд, необязательно быть профессионалом: задания подойдут как для продвинутых CTF&nbsp;&mdash;&nbsp;игроков, так и&nbsp;для новичков.</p>
+                </div>
+              </div>
+            </div>
+            <div class="participants__content-block">
+              <div class="participants__slider-wrapper">
+                <div class="slider-nav participants__slider-nav">
+                  <button class="slider-nav__btn button-reset js-participants-btn-prev">
+                    <svg class="icon icon-shevron-left slider-nav__btn-icon" width="11" height="29">
+                      <use xlink:href="images/sprites/sprite-mono.svg#shevron-left"></use>
+                    </svg>
+                  </button>
+                  <button class="slider-nav__btn button-reset js-participants-btn-next">
+                    <svg class="icon icon-shevron-right slider-nav__btn-icon" width="11" height="29">
+                      <use xlink:href="images/sprites/sprite-mono.svg#shevron-right"></use>
+                    </svg>
+                  </button>
+                </div>
+                <div class="swiper participants__slider">
+                  <div class="swiper-wrapper"><img class="participants__slider-item swiper-slide" src="images/participants/slider-img.jpg" alt=""><img class="participants__slider-item swiper-slide" src="images/participants/slider-img3.jpg" alt=""><img class="participants__slider-item swiper-slide" src="images/participants/slider-img4.jpg" alt=""></div>
+                </div>
+              </div>
+              <div class="participants__slider2-wrapper">
+                <div class="swiper participants__slider2">
+                  <div class="swiper-wrapper"><img class="participants__slider2-item swiper-slide" src="images/participants/slider-img3.jpg" alt=""><img class="participants__slider2-item swiper-slide" src="images/participants/slider-img4.jpg" alt=""><img class="participants__slider2-item swiper-slide" src="images/participants/slider-img3.jpg" alt=""></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="about-ctf section">
           <div class="site-container">
-            <h1>Hero Heading</h1>
+            <div class="about-ctf__container">
+              <h2 class="about-ctf__heading"><span class="_circle-container"><span class="_circle"></span><span class="_circle"></span><span class="_circle"></span><span class="_circle"></span><span class="_circle"></span>Что</span>  такое формат CTF?</h2>
+              <div class="about-ctf__blocks grid-container">
+                <div class="about-ctf__blocks-item"></div>
+                <div class="about-ctf__blocks-item">
+                  <p class="about-ctf__txt">CTF (Capture the Flag) – соревнования по информационной безопасности, в которых участники исследуют разные системы, решают таски и находят “флаги”, то есть ценную, но недостаточно защищенную информацию. Участники отправляют флаги на специальный сервер и получают баллы, которые идут в общий зачет и отображаются на борде.</p>
+                  <p class="about-ctf__txt_small">Все системы, в которых участники ищут флаги, придуманы специально для соревнований, поэтому их можно ломать и тестировать как угодно. Это не преступление, если вы взломали искусственную систему, и вам было весело.</p>
+                </div>
+              </div>
+            </div>
           </div>
         </section>
       </main>

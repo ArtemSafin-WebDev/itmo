@@ -1,3 +1,26 @@
+-
+  let nav_arr = [
+    "Организаторы",
+    "Подготовка",
+    "Призы",
+    "Ответы на вопросы",
+    "Контакты"
+  ]
+
 header.header
-	.site-container
-		h1 header
+  .site-container
+    .header__container.grid-container
+      .header__block
+        a.logo(href="/")
+          +icon-multi("logo")(width="200" height="22" class="logo__icon")
+      .header__block
+        a.header__second-logo(href="/")
+          +icon-mono("logo-second")(width="27" height="27" class="header__second-logo-icon")
+          p МНОЦ &laquo;Безопасность и&nbsp;надежность критических цифровых технологий&raquo;
+      .header__block
+        nav.header__nav
+          ul.header__nav-list
+            for item in nav_arr
+              li.header__nav-item
+                a.header__nav-link(href="/")= item
+        +button("Заполнить анкету")

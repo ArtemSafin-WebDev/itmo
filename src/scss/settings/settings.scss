@@ -64,12 +64,31 @@ button {
 	flex-grow: 1;
 }
 
+// .page-body {
+//   padding-top: calc(var(--header-height) + 5.7rem);
+// }
+
 .js-focus-visible button:focus:not(.focus-visible) {
-  box-shadow: none;
+  outline: none;
 }
 
 button:focus {
-  box-shadow: 0 0 0 10px red;
+  outline: none;
+  color: var(--color-blue-700);
+}
+
+.js-focus-visible a:focus:not(.focus-visible) {
+  outline: none;
+}
+
+a:focus {
+  outline: none;
+  color: var(--color-blue-700);
+
+  svg {
+    fill: var(--color-blue-700);
+    transition: fill var(--transition);
+  }
 }
 
 .disable-scroll {
@@ -90,8 +109,96 @@ button:focus {
   font-family: var(--main-ff);
 }
 
-.gird-container {
+.button {
+  padding: 2rem 3.6rem;
+  border-radius: 7.2rem;
+  background-color: var(--color-purple-900);
+  color: var(--color-white);
+  cursor: pointer;
+  transition: color var(--transition);
+
+  &:hover {
+    color: var(--color-blue-700);
+  }
+}
+
+.grid-container {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   column-gap: var(--grid-offset);
+}
+
+
+.social {
+  display: flex;
+  align-items: center;
+
+  &__item {
+    margin-right: 0.9rem;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  &__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 3.2rem;
+    height: 3.2rem;
+    border: 1px solid var(--color-grey-500);
+    border-radius: 50%;
+
+    &:hover {
+      .icon {
+        fill: var(--color-blue-700);
+      }
+    }
+  }
+
+  &__link-icon {
+    fill: var(--color-grey-500);
+    transition: fill var(--transition);
+  }
+}
+
+.section {
+  margin-bottom: 18rem;
+}
+
+.slider-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 13.5rem;
+  border-radius: 6.8rem;
+  overflow: hidden;
+
+  &__btn {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 50%;
+    height: 5rem;
+    fill: none;
+    stroke: var(--color-white);
+    cursor: pointer;
+    padding: 1.1rem 0 1.1rem 1.6rem;
+    background-color: var(--color-purple-900);
+    transition: background-color var(--transition);
+
+    .icon {
+      flex-shrink: 0;
+    }
+
+    &:hover {
+      background-color: var(--color-purple-700);
+    }
+
+    &:last-child {
+      justify-content: flex-end;
+      padding: 1.1rem 1.6rem 1.1rem 0;
+    }
+  }
 }
