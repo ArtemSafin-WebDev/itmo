@@ -1,0 +1,29 @@
+-
+  let faq_arr = [
+    "Могут ли из одной школы участвовать несколько команд?",
+    "Существует ли регламент проведения олимпиады?",
+    "Время и место проведения",
+    "Как добраться?"
+  ]
+
+section.section.faq
+  .site-container.faq__container
+    h2.faq__heading.second-heading
+      | <span>Ответы</span> на частые вопросы
+    .faq__content.grid-container
+      .grid-container__block
+        span.faq__small-legend Полезная информация
+      .grid-container__block.faq__item-container
+        ul.faq__list
+          for item in faq_arr
+            li.faq__item
+              button.faq__btn.button-reset.js-drop-menu-btn
+                span.faq__btn-txt= item
+                span.faq__btn-icon
+                  span
+                  span
+              .drop-menu-container.js-drop-menu-container
+                .faq__item-body.drop-menu.js-drop-menu
+                  p
+                    | Да, конечно! Главное, чтобы в команде было не более 4 участников.
+

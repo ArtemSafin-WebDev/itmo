@@ -1,0 +1,87 @@
+.about-org {
+  position: relative;
+
+  &_layer {
+    position: absolute;
+    top: 0;
+    left: -27.8rem;
+    width: 87.3rem;
+    height: 67.6rem;
+    background-image: url(../../images/layer2.svg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  &__heading {
+    display: block;
+    width: 140.9rem;
+    height: 11rem;
+    margin-bottom: 10rem;
+  }
+
+  &__blocks-item {
+    grid-column: 6 span;
+  }
+
+  &__oragnization {
+    max-width: 65rem;
+    margin-left: auto;
+    display: flex;
+    height: 100%;
+  }
+
+  &__oragnization-icon {
+    display: block;
+    width: 7.8rem;
+    height: 4.1rem;
+    object-fit: contain;
+    margin-right: 5rem;
+    flex-shrink: 0;
+  }
+
+  &__oragnization-content {
+    display: flex;
+    flex-direction: column;
+    max-width: 52rem;
+    flex-grow: 1;
+  }
+
+  &__oragnization-legend-text {
+    margin-bottom: 4rem;
+    font: var(--font-roboto);
+  }
+
+  &__oragnization-text {
+    margin-bottom: 4rem;
+  }
+
+  &__oragnization-feautures {
+    padding-top: 2.4rem;
+    border-top: 1px solid #304659;
+    display: flex;
+    align-items: center;
+    margin-top: auto;
+  }
+
+  &__oragnization-feautures-item {
+    margin-right: 3.6rem;
+    display: flex;
+    align-items: center;
+    font: var(--font-body-S);
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  &__oragnization-feautures-icon {
+    display: block;
+    width: 2rem;
+    height: 2rem;
+    object-fit: cover;
+    margin-right: 0.8rem;
+    fill: none;
+    stroke: var(--color-grey-900);
+  }
+}

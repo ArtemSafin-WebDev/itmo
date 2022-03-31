@@ -5,13 +5,19 @@ import documenReady from './helpers/documenReady';
 import participantsSlider from './modules/participantsSlider';
 import daysLeft from './modules/daysLeft';
 import preloaderHide from './modules/preloaderHide';
+import sectionAnimation from './modules/sectionAnimation';
+import initTabs from './modules/initTabs';
 
 window.onload = () => {
-  preloaderHide();
+  setTimeout(() => {
+    preloaderHide();
+  }, 400);
 };
 
 documenReady(() => {
   lazyIMages();
   participantsSlider();
   daysLeft();
+  sectionAnimation();
+  initTabs();
 });

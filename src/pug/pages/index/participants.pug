@@ -1,7 +1,7 @@
 section.section.participants
   .site-container.grid-container.participants__container
     .participants__content-block
-      h2.participants__heading
+      h2.participants__heading.js-animated-heading
         | <span>Принять</span> участие может каждый
       .participants__text-container
         .participants__text-container-block
@@ -16,18 +16,18 @@ section.section.participants
     .participants__content-block
       .participants__slider-wrapper
         .slider-nav.participants__slider-nav
-          button.slider-nav__btn.button-reset.js-participants-btn-prev
+          button.slider-nav__btn.button-reset.js-participants-btn-prev(aria-label="Предыдущий слайд")
             +icon-mono("shevron-left")(width="11" height="29" class="slider-nav__btn-icon")
-          button.slider-nav__btn.button-reset.js-participants-btn-next
+          button.slider-nav__btn.button-reset.js-participants-btn-next(aria-label="Следующий слайд")
             +icon-mono("shevron-right")(width="11" height="29" class="slider-nav__btn-icon")
         .swiper.participants__slider
           .swiper-wrapper
-            img.participants__slider-item.swiper-slide(src="images/participants/slider-img.jpg" alt="")
-            img.participants__slider-item.swiper-slide(src="images/participants/slider-img3.jpg" alt="")
-            img.participants__slider-item.swiper-slide(src="images/participants/slider-img4.jpg" alt="")
+            img.participants__slider-item.swiper-slide(src="images/participants/slider-img.jpg" alt="Участники соревнованиий по информационной безопасности для школьников")
+            img.participants__slider-item.swiper-slide(src="images/participants/slider-img3.jpg" alt="Участники соревнованиий по информационной безопасности для школьников")
+            img.participants__slider-item.swiper-slide(src="images/participants/slider-img4.jpg" alt="Участники соревнованиий по информационной безопасности для школьников")
       .participants__slider2-wrapper
         .swiper.participants__slider2
           .swiper-wrapper
-            img.participants__slider2-item.swiper-slide(src="images/participants/slider-img3.jpg" alt="")
-            img.participants__slider2-item.swiper-slide(src="images/participants/slider-img4.jpg" alt="")
-            img.participants__slider2-item.swiper-slide(src="images/participants/slider-img3.jpg" alt="")
+            img.participants__slider2-item.swiper-slide(src="images/participants/slider-img3.jpg" alt="Участники соревнованиий по информационной безопасности для школьников")
+            img.participants__slider2-item.swiper-slide(src="images/participants/slider-img4.jpg" alt="Участники соревнованиий по информационной безопасности для школьников")
+            img.participants__slider2-item.swiper-slide(src="images/participants/slider-img3.jpg" alt="Участники соревнованиий по информационной безопасности для школьников")

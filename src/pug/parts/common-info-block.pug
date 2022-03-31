@@ -1,0 +1,18 @@
+section.section.common-info-block
+  if bgLayer
+    +icon-mono('bg-layer-right')(width="1061" height="924" class="common-info-block_svg-layer")
+    +icon-mono('bg-layer-left')(width="1083" height="943" class="common-info-block_svg-layer2")
+  .site-container
+    h2.second-heading.common-info-block__heading.js-animated-heading !{heading}
+    .common-info-block__container.grid-container
+      .grid-container__block
+        span.common-info-block__small-legend= smallText
+      .grid-container__block
+        if bgLayer
+          .common-info-block_layer
+          .common-info-block_layer2
+        .common-info-block__blocks
+          for item in common_block_arr
+            .common-info-block__card(class=modCardClass)
+              img(data-src=`${item.img}` src="#" alt=item.name class="lazy common-info-block__card-img")
+              p.common-info-block__card-title= item.name

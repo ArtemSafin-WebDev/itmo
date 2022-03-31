@@ -5,6 +5,8 @@ export default () => {
   const startDate = dayjs();
   const daysLeft = document.querySelector(".js-days-left");
 
+  if (!daysLeft) return;
+
   let days = startDate.diff(endDate, 'day');
 
   daysLeft.innerHTML = days.toString().substr(1);

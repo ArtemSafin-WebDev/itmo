@@ -3,20 +3,25 @@ section.intro.section
     .intro_blur
     .intro_blur2
     .intro_bg-svg
-    h1.intro__heading Neva CTF
+    h1.intro__heading.js-emerging-text Neva CTF
     .intro__content.grid-container
       .intro__content-block
       .intro__content-block
         .intro__content-block-item
-          p.intro__content-txt Neva CTF – командное соревнование по информационной безопасности для школьников
-          .intro__content-btn-wrapper
-            +button("Заполнить анкету")(class="intro__content-btn")
-            p.intro__content-days-left-txt Дней до мероприятия
-            span.intro__content-days-left.js-days-left 40
+          p.intro__content-txt.js-emerging-block3 Neva CTF – командное соревнование по информационной безопасности для школьников
+          .intro__content-regulation-wrapper.js-emerging-block2
+            .intro__content-btn-wrapper
+              +button("Заполнить анкету")(class="intro__content-btn")
+              p.intro__content-days-left-txt Дней до мероприятия
+              span.intro__content-days-left.js-days-left 40
+            a.intro__content-regulation(href="/")
+              +icon-mono("file")(width="27" height="27" class="intro__content-regulation-icon")
+              | Регламент проведения
+
         .intro__content-block-item
-          p.intro__content-date 23
-          span.intro__content-date-year Апрель <br> 2022
-    .intro__content.grid-container
+          p.intro__content-date.js-emerging-text 23
+          span.intro__content-date-year.js-emerging-block3 Апрель <br> 2022
+    .intro__content.grid-container.js-emerging-block
       .intro__content-block
         span.intro__content-small-legend Организаторы
       .intro__content-block
@@ -36,14 +41,11 @@ section.intro.section
           .intro__content-socials-wrapper
             ul.social
               li.social__item
-                a.social__link(href="/")
+                a.social__link(href="/" aria-label="Ссылка на телеграмм аккаунт" title="Ссылка на телеграмм аккаунт")
                   +icon-mono("tg")(class="social__link-icon" width="14" height="14")
               li.social__item
-                a.social__link(href="/")
+                a.social__link(href="/" aria-label="Ссылка на страницу Вконтакте" title="Ссылка на страницу Вконтакте")
                   +icon-mono("vk")(class="social__link-icon" width="14" height="14")
               li.social__item
-                a.social__link(href="/")
+                a.social__link(href="/" aria-label="Ссылка на аккаунт в WhatsUp" title="Ссылка на аккаунт в WhatsUp")
                   +icon-mono("wp")(class="social__link-icon" width="14" height="14")
-            a.intro__content-regulation(href="/")
-              +icon-mono("file")(width="27" height="27" class="intro__content-regulation-icon")
-              | Регламент проведения

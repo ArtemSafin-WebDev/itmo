@@ -15,6 +15,7 @@
     text-transform: uppercase;
     margin-bottom: 6rem;
     padding-top: 6rem;
+    overflow: hidden;
 
     span {
       position: relative;
@@ -31,6 +32,10 @@
         transform: translateY(-50%);
         content: "";
       }
+    }
+
+    > div {
+      overflow: hidden;
     }
   }
 
@@ -71,10 +76,11 @@
     &::before {
       position: absolute;
       left: calc(100% + 0.3rem);
-      bottom: -1rem;
-      width: 5.2rem;
-      height: 6.8rem;
-      background-image: url(../images/participants/courage.svg);
+      top: 50%;
+      transform: translateY(-50%);
+      width: 6rem;
+      height: 6rem;
+      background-image: url(../images/participants/lightning.svg);
       background-position: center;
       background-size: cover;
       content: "";

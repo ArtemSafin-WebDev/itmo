@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Описание сайта">
+    <meta name="description" content="Национальный исследовательский университет ИТМО">
     <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
@@ -12,7 +12,7 @@
     <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
-    <title>Главная | Название сайта</title>
+    <title>Главная | Университет ИТМО</title>
     <link rel="stylesheet" href="./css/style.min.css?v=0.0.0.0">
   </head>
   <body class="page-home page-body">
@@ -24,8 +24,8 @@
     <div class="page-wrapper">
       <header class="header">
         <div class="site-container">
-          <div class="header__container grid-container">
-            <div class="header__block"><a class="logo" href="/">
+          <div class="header__container grid-container js-emerging-block">
+            <div class="header__block"><a class="logo" href="/" aria-label="Логотип Национальный исследовательский университет ИТМО">
                 <svg class="icon icon-logo logo__icon" width="200" height="22">
                   <use xlink:href="images/sprites/sprite-multi.svg#logo"></use>
                 </svg></a></div>
@@ -44,7 +44,7 @@
                   <li class="header__nav-item"><a class="header__nav-link" href="/">Контакты</a></li>
                 </ul>
               </nav>
-              <button class="button-reset button">Заполнить анкету</button>
+              <button class="button-reset button"><span class="button__txt">Заполнить анкету</span></button>
             </div>
           </div>
         </div>
@@ -55,23 +55,28 @@
             <div class="intro_blur"></div>
             <div class="intro_blur2"></div>
             <div class="intro_bg-svg"></div>
-            <h1 class="intro__heading">Neva CTF</h1>
+            <h1 class="intro__heading js-emerging-text">Neva CTF</h1>
             <div class="intro__content grid-container">
               <div class="intro__content-block"></div>
               <div class="intro__content-block">
                 <div class="intro__content-block-item">
-                  <p class="intro__content-txt">Neva CTF – командное соревнование по информационной безопасности для школьников</p>
-                  <div class="intro__content-btn-wrapper">
-                    <button class="button-reset button intro__content-btn">Заполнить анкету</button>
-                    <p class="intro__content-days-left-txt">Дней до мероприятия</p><span class="intro__content-days-left js-days-left">40</span>
+                  <p class="intro__content-txt js-emerging-block3">Neva CTF – командное соревнование по информационной безопасности для школьников</p>
+                  <div class="intro__content-regulation-wrapper js-emerging-block2">
+                    <div class="intro__content-btn-wrapper">
+                      <button class="button-reset button intro__content-btn"><span class="button__txt">Заполнить анкету</span></button>
+                      <p class="intro__content-days-left-txt">Дней до мероприятия</p><span class="intro__content-days-left js-days-left">40</span>
+                    </div><a class="intro__content-regulation" href="/">
+                      <svg class="icon icon-file intro__content-regulation-icon" width="27" height="27">
+                        <use xlink:href="images/sprites/sprite-mono.svg#file"></use>
+                      </svg>Регламент проведения</a>
                   </div>
                 </div>
                 <div class="intro__content-block-item">
-                  <p class="intro__content-date">23</p><span class="intro__content-date-year">Апрель <br> 2022</span>
+                  <p class="intro__content-date js-emerging-text">23</p><span class="intro__content-date-year js-emerging-block3">Апрель <br> 2022</span>
                 </div>
               </div>
             </div>
-            <div class="intro__content grid-container">
+            <div class="intro__content grid-container js-emerging-block">
               <div class="intro__content-block"><span class="intro__content-small-legend">Организаторы</span></div>
               <div class="intro__content-block">
                 <div class="intro__content-block-item">
@@ -94,22 +99,19 @@
                   <p class="intro__content-adress">Санкт-Петербург, Песочная набережная, д. 14</p><a class="intro__content-link" href="tel:+78123123269">+7 (812) 312–32–69</a>
                   <div class="intro__content-socials-wrapper">
                     <ul class="social">
-                      <li class="social__item"><a class="social__link" href="/">
+                      <li class="social__item"><a class="social__link" href="/" aria-label="Ссылка на телеграмм аккаунт" title="Ссылка на телеграмм аккаунт">
                           <svg class="icon icon-tg social__link-icon" width="14" height="14">
                             <use xlink:href="images/sprites/sprite-mono.svg#tg"></use>
                           </svg></a></li>
-                      <li class="social__item"><a class="social__link" href="/">
+                      <li class="social__item"><a class="social__link" href="/" aria-label="Ссылка на страницу Вконтакте" title="Ссылка на страницу Вконтакте">
                           <svg class="icon icon-vk social__link-icon" width="14" height="14">
                             <use xlink:href="images/sprites/sprite-mono.svg#vk"></use>
                           </svg></a></li>
-                      <li class="social__item"><a class="social__link" href="/">
+                      <li class="social__item"><a class="social__link" href="/" aria-label="Ссылка на аккаунт в WhatsUp" title="Ссылка на аккаунт в WhatsUp">
                           <svg class="icon icon-wp social__link-icon" width="14" height="14">
                             <use xlink:href="images/sprites/sprite-mono.svg#wp"></use>
                           </svg></a></li>
-                    </ul><a class="intro__content-regulation" href="/">
-                      <svg class="icon icon-file intro__content-regulation-icon" width="27" height="27">
-                        <use xlink:href="images/sprites/sprite-mono.svg#file"></use>
-                      </svg>Регламент проведения</a>
+                    </ul>
                   </div>
                 </div>
               </div>
@@ -119,7 +121,7 @@
         <section class="section participants">
           <div class="site-container grid-container participants__container">
             <div class="participants__content-block">
-              <h2 class="participants__heading"><span>Принять</span> участие может каждый</h2>
+              <h2 class="participants__heading js-animated-heading"><span>Принять</span> участие может каждый</h2>
               <div class="participants__text-container">
                 <div class="participants__text-container-block"><span class="participants__courage">Смелее!</span></div>
                 <div class="participants__text-container-block">
@@ -132,24 +134,24 @@
             <div class="participants__content-block">
               <div class="participants__slider-wrapper">
                 <div class="slider-nav participants__slider-nav">
-                  <button class="slider-nav__btn button-reset js-participants-btn-prev">
+                  <button class="slider-nav__btn button-reset js-participants-btn-prev" aria-label="Предыдущий слайд">
                     <svg class="icon icon-shevron-left slider-nav__btn-icon" width="11" height="29">
                       <use xlink:href="images/sprites/sprite-mono.svg#shevron-left"></use>
                     </svg>
                   </button>
-                  <button class="slider-nav__btn button-reset js-participants-btn-next">
+                  <button class="slider-nav__btn button-reset js-participants-btn-next" aria-label="Следующий слайд">
                     <svg class="icon icon-shevron-right slider-nav__btn-icon" width="11" height="29">
                       <use xlink:href="images/sprites/sprite-mono.svg#shevron-right"></use>
                     </svg>
                   </button>
                 </div>
                 <div class="swiper participants__slider">
-                  <div class="swiper-wrapper"><img class="participants__slider-item swiper-slide" src="images/participants/slider-img.jpg" alt=""><img class="participants__slider-item swiper-slide" src="images/participants/slider-img3.jpg" alt=""><img class="participants__slider-item swiper-slide" src="images/participants/slider-img4.jpg" alt=""></div>
+                  <div class="swiper-wrapper"><img class="participants__slider-item swiper-slide" src="images/participants/slider-img.jpg" alt="Участники соревнованиий по информационной безопасности для школьников"><img class="participants__slider-item swiper-slide" src="images/participants/slider-img3.jpg" alt="Участники соревнованиий по информационной безопасности для школьников"><img class="participants__slider-item swiper-slide" src="images/participants/slider-img4.jpg" alt="Участники соревнованиий по информационной безопасности для школьников"></div>
                 </div>
               </div>
               <div class="participants__slider2-wrapper">
                 <div class="swiper participants__slider2">
-                  <div class="swiper-wrapper"><img class="participants__slider2-item swiper-slide" src="images/participants/slider-img3.jpg" alt=""><img class="participants__slider2-item swiper-slide" src="images/participants/slider-img4.jpg" alt=""><img class="participants__slider2-item swiper-slide" src="images/participants/slider-img3.jpg" alt=""></div>
+                  <div class="swiper-wrapper"><img class="participants__slider2-item swiper-slide" src="images/participants/slider-img3.jpg" alt="Участники соревнованиий по информационной безопасности для школьников"><img class="participants__slider2-item swiper-slide" src="images/participants/slider-img4.jpg" alt="Участники соревнованиий по информационной безопасности для школьников"><img class="participants__slider2-item swiper-slide" src="images/participants/slider-img3.jpg" alt="Участники соревнованиий по информационной безопасности для школьников"></div>
                 </div>
               </div>
             </div>
@@ -158,13 +160,225 @@
         <section class="about-ctf section">
           <div class="site-container">
             <div class="about-ctf__container">
-              <h2 class="about-ctf__heading"><span class="_circle-container"><span class="_circle"></span><span class="_circle"></span><span class="_circle"></span><span class="_circle"></span><span class="_circle"></span>Что</span>  такое формат CTF?</h2>
+              <h2 class="about-ctf__heading js-animated-heading"><span class="_circle-container"><span class="_circle"></span><span class="_circle"></span><span class="_circle"></span><span class="_circle"></span><span class="_circle"></span>Что</span>  такое формат CTF?</h2>
               <div class="about-ctf__blocks grid-container">
                 <div class="about-ctf__blocks-item"></div>
                 <div class="about-ctf__blocks-item">
                   <p class="about-ctf__txt">CTF (Capture the Flag) – соревнования по информационной безопасности, в которых участники исследуют разные системы, решают таски и находят “флаги”, то есть ценную, но недостаточно защищенную информацию. Участники отправляют флаги на специальный сервер и получают баллы, которые идут в общий зачет и отображаются на борде.</p>
                   <p class="about-ctf__txt_small">Все системы, в которых участники ищут флаги, придуманы специально для соревнований, поэтому их можно ломать и тестировать как угодно. Это не преступление, если вы взломали искусственную систему, и вам было весело.</p>
                 </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="section preapare">
+          <div class="site-container preapare__container">
+            <h2 class="visually-hidden">как подготовиться</h2>
+            <svg class="icon icon-how-to-prepare preapare__svg-heading" width="1559" height="132">
+              <use xlink:href="images/sprites/sprite-multi.svg#how-to-prepare"></use>
+            </svg>
+            <div class="preapare__content grid-container">
+              <div class="preapare__content-block"></div>
+              <div class="preapare__content-block">
+                <div class="preapare__content-item">
+                  <p class="preapare__legeng-text">Таски на Neva CTF подойдут каждому, даже новичку</p>
+                  <p class="preapare__text">Но&nbsp;предварительная подготовка еще никогда не&nbsp;была лишней. Если вы&nbsp;хотите подтянуть навыки, знать, что вас ждет и&nbsp;иметь преимущество над соперниками, мы&nbsp;рекомендуем проверенные материалы.</p>
+                </div>
+                <div class="preapare__content-item"><a class="preapare__link" href="/">
+                    <div class="preapare__link-icon-wrapper">
+                      <svg class="icon icon-book preapare__link-icon" width="20" height="20">
+                        <use xlink:href="images/sprites/sprite-mono.svg#book"></use>
+                      </svg>
+                    </div>
+                    <p>Онлайн-учебник <br> &laquo;Информационные технологии и&nbsp;их&nbsp;безопасность&raquo; от&nbsp;[team Team]</p></a><a class="preapare__link" href="/">
+                    <div class="preapare__link-icon-wrapper">
+                      <svg class="icon icon-paly preapare__link-icon" width="20" height="20">
+                        <use xlink:href="images/sprites/sprite-mono.svg#paly"></use>
+                      </svg>
+                    </div>
+                    <p>Видеокурсы &laquo;Основы компьютерной безопасности&raquo; от&nbsp;Hackerdom</p></a><a class="preapare__link" href="/">
+                    <div class="preapare__link-icon-wrapper">
+                      <svg class="icon icon-school-board preapare__link-icon" width="20" height="20">
+                        <use xlink:href="images/sprites/sprite-mono.svg#school-board"></use>
+                      </svg>
+                    </div>
+                    <p>Лекции для начинающих от&nbsp;сообщества спортивного хакинга CTF</p></a></div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="section common-info-block">
+          <svg class="icon icon-bg-layer-right common-info-block_svg-layer" width="1061" height="924">
+            <use xlink:href="images/sprites/sprite-mono.svg#bg-layer-right"></use>
+          </svg>
+          <svg class="icon icon-bg-layer-left common-info-block_svg-layer2" width="1083" height="943">
+            <use xlink:href="images/sprites/sprite-mono.svg#bg-layer-left"></use>
+          </svg>
+          <div class="site-container">
+            <h2 class="second-heading common-info-block__heading js-animated-heading"><span> Почему </span> стоит принять участие?</h2>
+            <div class="common-info-block__container grid-container">
+              <div class="grid-container__block"><span class="common-info-block__small-legend">Победители получают</span></div>
+              <div class="grid-container__block">
+                <div class="common-info-block_layer"></div>
+                <div class="common-info-block_layer2"></div>
+                <div class="common-info-block__blocks">
+                  <div class="common-info-block__card mod-border-card"><img class="lazy common-info-block__card-img" data-src="images/participate/img1.svg" src="#" alt="Призы от партнеров и спонсоров">
+                    <p class="common-info-block__card-title">Призы от партнеров и спонсоров</p>
+                  </div>
+                  <div class="common-info-block__card mod-border-card"><img class="lazy common-info-block__card-img" data-src="images/participate/img2.svg" src="#" alt="Дополнительные баллы для поступления в ИТМО">
+                    <p class="common-info-block__card-title">Дополнительные баллы для поступления в ИТМО</p>
+                  </div>
+                  <div class="common-info-block__card mod-border-card"><img class="lazy common-info-block__card-img" data-src="images/participate/img3.svg" src="#" alt="Сертификаты и дипломы победителей для портфолио">
+                    <p class="common-info-block__card-title">Сертификаты и дипломы победителей для портфолио</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="section common-info-block">
+          <div class="site-container">
+            <h2 class="second-heading common-info-block__heading js-animated-heading"><span> Что </span> принести с собой?</h2>
+            <div class="common-info-block__container grid-container">
+              <div class="grid-container__block"><span class="common-info-block__small-legend">Для участия необходимо</span></div>
+              <div class="grid-container__block">
+                <div class="common-info-block__blocks">
+                  <div class="common-info-block__card"><img class="lazy common-info-block__card-img" data-src="images/what-bring/img1.jpg" src="#" alt="Ученический билет">
+                    <p class="common-info-block__card-title">Ученический билет</p>
+                  </div>
+                  <div class="common-info-block__card"><img class="lazy common-info-block__card-img" data-src="images/what-bring/img2.jpg" src="#" alt="Ноутбук, на котором вы будете работать">
+                    <p class="common-info-block__card-title">Ноутбук, на котором вы будете работать</p>
+                  </div>
+                  <div class="common-info-block__card"><img class="lazy common-info-block__card-img" data-src="images/what-bring/img3.jpg" src="#" alt="Упорство и азарт">
+                    <p class="common-info-block__card-title">Упорство и азарт</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="section shield">
+          <div class="site-container">
+            <div class="shield__container">
+              <h3 class="first-heading shield__heading js-animated-heading"><span>Заполните</span> анкету для участия</h3>
+              <div class="shield__blocks grid-container">
+                <div class="shield__blocks-item"><img class="shield__img lazy" data-src="images/shield/img1.svg" src="#" alt=""></div>
+                <div class="shield__blocks-item">
+                  <p>Для участия в олимпиаде достаточно заполнить анкету регистрации на всю команду.</p>
+                  <p>Вам останется только следить за обновлениями!</p>
+                  <button class="button-reset button shield__btn"><span class="button__txt">Заполнить анкету</span></button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="section about-org">
+          <div class="about-org_layer"></div>
+          <div class="site-container about-org__contaoner">
+            <h2 class="visually-hidden">об организаторах</h2>
+            <svg class="icon icon-organizers about-org__heading" width="1409" height="110">
+              <use xlink:href="images/sprites/sprite-multi.svg#organizers"></use>
+            </svg>
+            <div class="about-org__blocks grid-container">
+              <div class="about-org__blocks-item">
+                <div class="about-org__oragnization">
+                  <svg class="icon icon-logo-second about-org__oragnization-icon" width="47" height="47">
+                    <use xlink:href="images/sprites/sprite-mono.svg#logo-second"></use>
+                  </svg>
+                  <div class="about-org__oragnization-content">
+                    <p class="about-org__oragnization-legend-text">Международный научно-образовательный центр «Безопасность и надежность критических цифровых технологий» Университета ИТМО</p>
+                    <p class="about-org__oragnization-text">Современный факультет, с долгой историей, сочетающий в себе академические традиции и инновационный подход в образовании. Выпускники всегда востребованы в российских и зарубежных компаниях и организациях.</p>
+                    <div class="about-org__oragnization-feautures">
+                      <div class="about-org__oragnization-feautures-item">
+                        <svg class="icon icon-portfolio about-org__oragnization-feautures-icon" width="20" height="20">
+                          <use xlink:href="images/sprites/sprite-mono.svg#portfolio"></use>
+                        </svg>Бизнес
+                      </div>
+                      <div class="about-org__oragnization-feautures-item">
+                        <svg class="icon icon-book-user about-org__oragnization-feautures-icon" width="20" height="20">
+                          <use xlink:href="images/sprites/sprite-mono.svg#book-user"></use>
+                        </svg>Образование
+                      </div>
+                      <div class="about-org__oragnization-feautures-item">
+                        <svg class="icon icon-physics about-org__oragnization-feautures-icon" width="20" height="20">
+                          <use xlink:href="images/sprites/sprite-mono.svg#physics"></use>
+                        </svg>Наука
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="about-org__blocks-item">
+                <div class="about-org__oragnization">
+                  <svg class="icon icon-logo-arsib about-org__oragnization-icon" width="79" height="41">
+                    <use xlink:href="images/sprites/sprite-mono.svg#logo-arsib"></use>
+                  </svg>
+                  <div class="about-org__oragnization-content">
+                    <p class="about-org__oragnization-legend-text">АРСИБ – Ассоциация руководителей служб информационной безопасности</p>
+                    <p class="about-org__oragnization-text">Современный факультет, с долгой историей, сочетающий в себе академические традиции и инновационный подход в образовании. Выпускники всегда востребованы в российских и зарубежных компаниях и организациях.</p>
+                    <div class="about-org__oragnization-feautures">
+                      <div class="about-org__oragnization-feautures-item">
+                        <svg class="icon icon-portfolio about-org__oragnization-feautures-icon" width="20" height="20">
+                          <use xlink:href="images/sprites/sprite-mono.svg#portfolio"></use>
+                        </svg>Бизнес
+                      </div>
+                      <div class="about-org__oragnization-feautures-item">
+                        <svg class="icon icon-book-user about-org__oragnization-feautures-icon" width="20" height="20">
+                          <use xlink:href="images/sprites/sprite-mono.svg#book-user"></use>
+                        </svg>Образование
+                      </div>
+                      <div class="about-org__oragnization-feautures-item">
+                        <svg class="icon icon-physics about-org__oragnization-feautures-icon" width="20" height="20">
+                          <use xlink:href="images/sprites/sprite-mono.svg#physics"></use>
+                        </svg>Наука
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="section faq">
+          <div class="site-container faq__container">
+            <h2 class="faq__heading second-heading"><span>Ответы</span> на частые вопросы</h2>
+            <div class="faq__content grid-container">
+              <div class="grid-container__block"><span class="faq__small-legend">Полезная информация</span></div>
+              <div class="grid-container__block faq__item-container">
+                <ul class="faq__list">
+                  <li class="faq__item">
+                    <button class="faq__btn button-reset js-drop-menu-btn"><span class="faq__btn-txt">Могут ли из одной школы участвовать несколько команд?</span><span class="faq__btn-icon"><span></span><span></span></span></button>
+                    <div class="drop-menu-container js-drop-menu-container">
+                      <div class="faq__item-body drop-menu js-drop-menu">
+                        <p>Да, конечно! Главное, чтобы в команде было не более 4 участников.</p>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="faq__item">
+                    <button class="faq__btn button-reset js-drop-menu-btn"><span class="faq__btn-txt">Существует ли регламент проведения олимпиады?</span><span class="faq__btn-icon"><span></span><span></span></span></button>
+                    <div class="drop-menu-container js-drop-menu-container">
+                      <div class="faq__item-body drop-menu js-drop-menu">
+                        <p>Да, конечно! Главное, чтобы в команде было не более 4 участников.</p>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="faq__item">
+                    <button class="faq__btn button-reset js-drop-menu-btn"><span class="faq__btn-txt">Время и место проведения</span><span class="faq__btn-icon"><span></span><span></span></span></button>
+                    <div class="drop-menu-container js-drop-menu-container">
+                      <div class="faq__item-body drop-menu js-drop-menu">
+                        <p>Да, конечно! Главное, чтобы в команде было не более 4 участников.</p>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="faq__item">
+                    <button class="faq__btn button-reset js-drop-menu-btn"><span class="faq__btn-txt">Как добраться?</span><span class="faq__btn-icon"><span></span><span></span></span></button>
+                    <div class="drop-menu-container js-drop-menu-container">
+                      <div class="faq__item-body drop-menu js-drop-menu">
+                        <p>Да, конечно! Главное, чтобы в команде было не более 4 участников.</p>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
               </div>
             </div>
           </div>

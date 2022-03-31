@@ -42,9 +42,11 @@
   }
 
   &__heading {
+    position: relative;
     font: var(--font-hero);
     text-transform: uppercase;
     margin-bottom: 3rem;
+    overflow: hidden;
   }
 
   &__content {
@@ -52,6 +54,10 @@
 
     &:nth-last-of-type(1) {
       margin-bottom: 0;
+    }
+
+    @include mq(custom, max, 1280) {
+      margin-bottom: 9rem;
     }
   }
 
@@ -91,6 +97,7 @@
     padding: 0.8rem 0.9rem;
     border-radius: 22rem;
     background-color: var(--color-white);
+    padding-right: 2.5rem;
   }
 
   &__content-btn {
@@ -114,9 +121,11 @@
     font: var(--font-hero);
     letter-spacing: -0.07em;
     text-transform: uppercase;
+    overflow: hidden;
   }
 
   &__content-date-year {
+    display: block;
     font: var(--font-roboto);
     letter-spacing: -0.02em;
   }
@@ -159,12 +168,17 @@
     margin-top: 2.9rem;
   }
 
+  &__content-regulation-wrapper {
+    display: flex;
+    align-items: center;
+  }
+
   &__content-regulation {
     display: flex;
     align-self: center;
     font: var(--font-body-S);
-    color: var(--color-grey-500);
     max-width: 12rem;
+    margin-left: 3.6rem;
 
     &:hover {
       .icon {
@@ -175,9 +189,11 @@
 
   &__content-regulation-icon {
     fill: none !important;
-    stroke: var(--color-grey-500);
+    stroke: var(--color-grey-900);
     flex-shrink: 0;
     margin-right: 0.8rem;
     transition: stroke var(--transition);
+    width: 2.7rem;
+    height: 2.7rem;
   }
 }

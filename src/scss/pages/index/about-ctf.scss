@@ -12,6 +12,10 @@
     max-width: 81.1rem;
     margin-bottom: 7.3rem;
 
+    > div {
+      overflow: hidden;
+    }
+
     ._circle-container {
       position: relative;
       padding-left: 20rem;
