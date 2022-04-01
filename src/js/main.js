@@ -10,6 +10,7 @@ import initTabs from './modules/initTabs';
 import gallerySliders from './modules/gallerySliders';
 import startAnim from './modules/startAnim';
 import initModal from './modules/initModal';
+import map from './modules/map';
 
 window.onload = () => {
   setTimeout(() => {
@@ -30,4 +31,5 @@ documenReady(() => {
   initTabs();
   gallerySliders();
   initModal();
+  map();
 });
