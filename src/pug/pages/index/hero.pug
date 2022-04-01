@@ -9,11 +9,22 @@ section.intro.section
       .intro__content-block
         .intro__content-block-item
           p.intro__content-txt.js-emerging-block3 Neva CTF – командное соревнование по информационной безопасности для школьников
+          .intro__content-block-mobile.js-emerging-block3
+            .intro__content-block-mobile-item
+              p.intro__content-date.js-emerging-text 23
+              span.intro__content-date-year Апрель <br> 2022
+            .intro__content-block-mobile-item
+              p.intro__content-adress Санкт-Петербург, Песочная набережная, д. 14
+              a.intro__content-link(href="tel:+78123123269") +7 (812) 312–32–69
+              a.intro__content-regulation(href="/")
+                +icon-mono("file")(width="27" height="27" class="intro__content-regulation-icon")
+                | Регламент проведения
           .intro__content-regulation-wrapper.js-emerging-block2
             .intro__content-btn-wrapper
               +button("Заполнить анкету")(class="intro__content-btn")
-              p.intro__content-days-left-txt Дней до мероприятия
-              span.intro__content-days-left.js-days-left 40
+              .intro__content-days-wrapper
+                p.intro__content-days-left-txt Дней до мероприятия
+                span.intro__content-days-left.js-days-left 40
             a.intro__content-regulation(href="/")
               +icon-mono("file")(width="27" height="27" class="intro__content-regulation-icon")
               | Регламент проведения

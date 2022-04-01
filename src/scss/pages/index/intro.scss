@@ -6,6 +6,13 @@
     position: relative;
   }
 
+  &__content-small-legend {
+    @include mq(sm) {
+      display: block;
+      margin-bottom: 2.4rem;
+    }
+  }
+
   &_blur {
     position: absolute;
     bottom: 11rem;
@@ -39,6 +46,14 @@
     background-image: url(../images/intro-bg-svg2.svg);
     background-position: center;
     background-size: cover;
+
+    @include mq(sm) {
+      right: -26rem;
+      bottom: -11rem;
+      z-index: -1;
+      width: 47.5rem;
+      height: 34.5rem;
+    }
   }
 
   &__heading {
@@ -47,6 +62,16 @@
     text-transform: uppercase;
     margin-bottom: 3rem;
     overflow: hidden;
+
+    @include mq(md) {
+      font: var(--font-title-1);
+    }
+
+    @include mq(sm) {
+      font-size: 7.4rem;
+      line-height: 1;
+      margin-bottom: 1.8rem;
+    }
   }
 
   &__content {
@@ -58,6 +83,14 @@
 
     @include mq(custom, max, 1280) {
       margin-bottom: 9rem;
+    }
+
+    @include mq(md) {
+      display: block;
+    }
+
+    @include mq(sm) {
+      margin-bottom: 6rem;
     }
   }
 
@@ -71,6 +104,10 @@
       display: grid;
       grid-template-columns: repeat(10, 1fr);
       column-gap: var(--grid-offset);
+
+      @include mq(sm) {
+        display: block;
+      }
     }
   }
 
@@ -81,6 +118,10 @@
 
     &:nth-child(2) {
       grid-column: 3 span;
+
+      @include mq(sm) {
+        display: none;
+      }
     }
   }
 
@@ -89,6 +130,12 @@
     max-width: 51.9rem;
     letter-spacing: -0.02em;
     margin-bottom: 3.5rem;
+
+    @include mq(sm) {
+      font: var(--font-roboto-M);
+      max-width: 100%;
+      margin-bottom: 7.5rem;
+    }
   }
 
   &__content-btn-wrapper {
@@ -98,23 +145,49 @@
     border-radius: 22rem;
     background-color: var(--color-white);
     padding-right: 2.5rem;
+
+    @include mq(sm) {
+      width: 100%;
+      justify-content: space-between;
+      padding-left: 2.8rem;
+      padding-right: 0.8rem;
+    }
   }
 
   &__content-btn {
     margin-right: 1.9rem;
+
+    @include mq(sm) {
+      order: 2;
+      margin-right: 0;
+    }
   }
 
   &__content-days-left-txt {
     color: var(--color-purple-900);
     max-width: 10.7rem;
+
+    @include mq(sm) {
+      order: 2;
+      font: var(--font-body-S);
+    }
   }
 
   &__content-days-left {
+    display: block;
     font-weight: 700;
     font-size: 5.2rem;
-    line-height: 1rem;
+    line-height: 1;
     letter-spacing: -0.02em;
     color: var(--color-purple-900);
+    flex-shrink: 0;
+
+    @include mq(sm) {
+      order: 1;
+      font: var(--font-roboto);
+      font-weight: 700;
+      margin-bottom: 0.4rem;
+    }
   }
 
   &__content-date {
@@ -122,16 +195,31 @@
     letter-spacing: -0.07em;
     text-transform: uppercase;
     overflow: hidden;
+
+    @include mq(sm) {
+      font-size: 7rem;
+      line-height: 1;
+      padding-right: 0.4rem;
+    }
   }
 
   &__content-date-year {
     display: block;
     font: var(--font-roboto);
     letter-spacing: -0.02em;
+
+    @include mq(sm) {
+      font: var(--font-roboto-M);
+      text-transform: lowercase;
+    }
   }
 
   &__content-organizers {
     display: flex;
+
+    @include mq(sm) {
+      flex-wrap: wrap;
+    }
 
     &-item {
       margin-right: 3.6rem;
@@ -147,6 +235,25 @@
       p {
         margin-bottom: 2.1rem;
         max-width: 35.4rem;
+      }
+
+      @include mq(sm) {
+        display: flex;
+        width: 100%;
+
+        p {
+          order: 2;
+        }
+      }
+    }
+
+    &-icon {
+      @include mq(sm) {
+        flex-shrink: 0;
+        order: 1;
+        margin-right: 3rem;
+        width: 2.8rem;
+        height: 2.8rem;
       }
     }
   }
@@ -185,6 +292,10 @@
         stroke: var(--color-blue-700);
       }
     }
+
+    @include mq(sm) {
+      display: none;
+    }
   }
 
   &__content-regulation-icon {
@@ -195,5 +306,44 @@
     transition: stroke var(--transition);
     width: 2.7rem;
     height: 2.7rem;
+  }
+
+  &__content-days-wrapper {
+    display: flex;
+    align-items: center;
+
+    @include mq(sm) {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
+
+  &__content-block-mobile {
+    display: none;
+    margin-bottom: 4rem;
+
+    @include mq(sm) {
+      display: flex;
+
+      .intro__content-regulation {
+        display: flex;
+        margin-left: 0;
+        margin-top: 2.4rem;
+      }
+
+      .intro__content-adress {
+        margin-bottom: 1rem;
+        max-width: 20rem;
+      }
+    }
+  }
+
+  &__content-block-mobile-item {
+    margin-right: 1rem;
+    flex-shrink: 0;
+
+    &:last-child {
+      margin-right: 0;
+    }
   }
 }

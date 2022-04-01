@@ -25,10 +25,15 @@
       <header class="header">
         <div class="site-container">
           <div class="header__container grid-container js-emerging-block">
-            <div class="header__block"><a class="logo" href="/" aria-label="Логотип Национальный исследовательский университет ИТМО">
+            <div class="header__block">
+              <button class="button-reset button-burger header__btn-burger"><span></span><span></span><span></span></button><a class="header__mobile-link" href="/">
+                <svg class="icon icon-logo-second header__second-logo-icon" width="27" height="27">
+                  <use xlink:href="images/sprites/sprite-mono.svg#logo-second"></use>
+                </svg></a><a class="logo" href="/" aria-label="Логотип Национальный исследовательский университет ИТМО">
                 <svg class="icon icon-logo logo__icon" width="200" height="22">
                   <use xlink:href="images/sprites/sprite-multi.svg#logo"></use>
-                </svg></a></div>
+                </svg></a>
+            </div>
             <div class="header__block"><a class="header__second-logo" href="/">
                 <svg class="icon icon-logo-second header__second-logo-icon" width="27" height="27">
                   <use xlink:href="images/sprites/sprite-mono.svg#logo-second"></use>
@@ -44,7 +49,7 @@
                   <li class="header__nav-item"><a class="header__nav-link" href="/">Контакты</a></li>
                 </ul>
               </nav>
-              <button class="button-reset button"><span class="button__txt">Заполнить анкету</span></button>
+              <button class="button-reset button header__btn"><span class="button__txt">Заполнить анкету</span></button>
             </div>
           </div>
         </div>
@@ -76,7 +81,22 @@
                         </svg></a></li>
                   </ul>
                 </div>
-                <div class="footer__block-content-item"><span class="footer__small-legend">Мы&nbsp;всегда ответим в&nbsp;мессенджерах и&nbsp;соц. сетях</span></div>
+                <div class="footer__block-content-item">
+                  <ul class="social footer__social _mobile">
+                    <li class="social__item"><a class="social__link" href="/" aria-label="Ссылка на телеграмм аккаунт" title="Ссылка на телеграмм аккаунт">
+                        <svg class="icon icon-tg social__link-icon" width="14" height="14">
+                          <use xlink:href="images/sprites/sprite-mono.svg#tg"></use>
+                        </svg></a></li>
+                    <li class="social__item"><a class="social__link" href="/" aria-label="Ссылка на страницу Вконтакте" title="Ссылка на страницу Вконтакте">
+                        <svg class="icon icon-vk social__link-icon" width="14" height="14">
+                          <use xlink:href="images/sprites/sprite-mono.svg#vk"></use>
+                        </svg></a></li>
+                    <li class="social__item"><a class="social__link" href="/" aria-label="Ссылка на аккаунт в WhatsUp" title="Ссылка на аккаунт в WhatsUp">
+                        <svg class="icon icon-wp social__link-icon" width="14" height="14">
+                          <use xlink:href="images/sprites/sprite-mono.svg#wp"></use>
+                        </svg></a></li>
+                  </ul><span class="footer__small-legend">Мы&nbsp;всегда ответим в&nbsp;мессенджерах и&nbsp;соц. сетях</span>
+                </div>
               </div>
             </div>
             <div class="footer__block"><img class="footer__img" src="images/footer-img.svg" alt="Молодой парень в синий толстовке машет рукой"></div>

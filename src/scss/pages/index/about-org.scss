@@ -18,10 +18,26 @@
     width: 140.9rem;
     height: 11rem;
     margin-bottom: 10rem;
+
+    @include mq(sm) {
+      margin-bottom: 5.2rem;
+    }
+  }
+
+  &__blocks {
+    @include mq(md) {
+      display: block;
+    }
   }
 
   &__blocks-item {
     grid-column: 6 span;
+
+    @include mq(md) {
+      &:nth-child(1) {
+        margin-bottom: 5.4rem;
+      }
+    }
   }
 
   &__oragnization {
@@ -29,6 +45,11 @@
     margin-left: auto;
     display: flex;
     height: 100%;
+
+    @include mq(md) {
+      max-width: 100%;
+      margin-left: 0;
+    }
   }
 
   &__oragnization-icon {
@@ -38,6 +59,10 @@
     object-fit: contain;
     margin-right: 5rem;
     flex-shrink: 0;
+
+    @include mq(sm) {
+      display: none;
+    }
   }
 
   &__oragnization-content {
@@ -45,15 +70,28 @@
     flex-direction: column;
     max-width: 52rem;
     flex-grow: 1;
+
+    @include mq(md) {
+      max-width: 100%;
+    }
   }
 
   &__oragnization-legend-text {
     margin-bottom: 4rem;
     font: var(--font-roboto);
+
+    @include mq(sm) {
+      font: var(--font-roboto-M);
+      margin-bottom: 2.4rem;
+    }
   }
 
   &__oragnization-text {
     margin-bottom: 4rem;
+
+    @include mq(sm) {
+      margin-bottom: 2.8rem;
+    }
   }
 
   &__oragnization-feautures {

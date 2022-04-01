@@ -11,6 +11,12 @@ header.header
   .site-container
     .header__container.grid-container.js-emerging-block
       .header__block
+        button.button-reset.button-burger.header__btn-burger
+          span
+          span
+          span
+        a.header__mobile-link(href="/")
+          +icon-mono("logo-second")(width="27" height="27" class="header__second-logo-icon")
         a.logo(href="/" aria-label="Логотип Национальный исследовательский университет ИТМО")
           +icon-multi("logo")(width="200" height="22" class="logo__icon")
       .header__block
@@ -23,4 +29,4 @@ header.header
             for item in nav_arr
               li.header__nav-item
                 a.header__nav-link(href="/")= item
-        +button("Заполнить анкету")
+        +button("Заполнить анкету")(class="header__btn")

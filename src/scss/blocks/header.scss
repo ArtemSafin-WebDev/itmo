@@ -8,10 +8,20 @@
   // overflow: hidden;
   margin-top: 2rem;
 
+  @include mq(sm) {
+    height: 3.5rem;
+  }
+
   &__container {
     background-color: var(--color-white);
     border-radius: 12.3rem;
     padding: 1.2rem 1.6rem 1.2rem;
+
+    @include mq(lg) {
+      background-color: transparent;
+      border-radius: 0;
+      padding: 0;
+    }
   }
 
   &__block {
@@ -26,6 +36,22 @@
       grid-column: 8 span;
       display: flex;
       align-items: center;
+    }
+
+    @include mq(lg) {
+      &:nth-child(2) {
+        display: none;
+      }
+
+      &:nth-child(1) {
+        grid-column: 12 span;
+        display: flex;
+        align-items: center;
+      }
+
+      &:nth-child(3) {
+        display: none;
+      }
     }
   }
 
@@ -50,6 +76,10 @@
     margin-left: auto;
     margin-right: 4rem;
 
+    @include mq(lg) {
+      display: none;
+    }
+
     &-list {
       display: flex;
       align-items: center;
@@ -70,5 +100,25 @@
         color: var(--color-blue-700);
       }
     }
+  }
+
+  &__btn {
+    @include mq(lg) {
+      display: none;
+    }
+  }
+
+  &__btn-burger {
+    display: none;
+
+    @include mq(sm) {
+      display: flex;
+      margin-right: 2.8rem;
+    }
+  }
+
+  &__mobile-link {
+    display: inline-block;
+    margin-right: auto;
   }
 }

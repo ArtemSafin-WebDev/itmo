@@ -2,8 +2,16 @@
   height: 52.4rem;
   width: 100%;
   background-color: var(--color-grey-500);
+
+  @include mq(sm) {
+    height: 27.5rem;
+  }
 }
 
 .index-map-container {
   margin-bottom: -5rem;
+
+  @include mq(sm) {
+    margin-bottom: -2rem;
+  }
 }

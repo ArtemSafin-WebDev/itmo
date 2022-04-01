@@ -17,9 +17,9 @@ export default () => {
 
   setTimeout(() => {
     timeline
-      .to(splitedText.lines, {yPercent: 0, duration: 0.6})
-      .to('.js-emerging-block3', {y: 0, autoAlpha: 1, duration: 0.3}, '-=0.1')
-      .to('.js-emerging-block', {y: 0, autoAlpha: 1, duration: 0.3}, '+=0.15')
-      .to('.js-emerging-block2', {y: 0, autoAlpha: 1, duration: 0.3}, '+=0.15');
+      .to(splitedText.lines, {yPercent: 0, duration: 0.6, clearProps: 'all'})
+      .to('.js-emerging-block3', {y: 0, autoAlpha: 1, duration: 0.3, clearProps: 'all'}, '-=0.1')
+      .to('.js-emerging-block', {y: 0, autoAlpha: 1, duration: 0.3, clearProps: 'all'}, '+=0.15')
+      .to('.js-emerging-block2', {y: 0, autoAlpha: 1, duration: 0.3, clearProps: 'all'}, '+=0.15');
   }, 1050);
 };
