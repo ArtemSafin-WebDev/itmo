@@ -24,9 +24,36 @@
     <div class="page-wrapper">
       <header class="header">
         <div class="site-container">
+          <div class="header__burger-menu js-burger-menu">
+            <div class="header__burger-menu-inner">
+              <div class="header__burger-menu-buttons"> 
+                <button class="header__burger-menu-close js-burger-close">
+                  <svg class="icon icon-cross" width="24" height="24">
+                    <use xlink:href="images/sprites/sprite-mono.svg#cross"></use>
+                  </svg>
+                </button><a class="header__burger-menu-phone-btn" href="#">
+                  <svg class="icon icon-phone" width="24" height="24">
+                    <use xlink:href="images/sprites/sprite-mono.svg#phone"></use>
+                  </svg></a><a class="header__burger-menu-callback-btn" href="#" data-path="callback">Заполнить анкету</a>
+              </div>
+              <div class="header__burger-menu-content"> 
+                <nav class="header__burger-menu-nav"> <a class="header__burger-menu-nav-link" href="#">Организаторы</a><a class="header__burger-menu-nav-link" href="#">Подготовка</a><a class="header__burger-menu-nav-link" href="#">Призы</a><a class="header__burger-menu-nav-link" href="#">Ответы на вопросы</a><a class="header__burger-menu-nav-link" href="#">Контакты</a></nav>
+                <div class="header__burger-menu-social"> <a class="header__burger-menu-social-link" href="#"> 
+                    <svg class="icon icon-tg" width="24" height="24">
+                      <use xlink:href="images/sprites/sprite-mono.svg#tg"></use>
+                    </svg></a><a class="header__burger-menu-social-link" href="#"> 
+                    <svg class="icon icon-vk" width="24" height="24">
+                      <use xlink:href="images/sprites/sprite-mono.svg#vk"></use>
+                    </svg></a><a class="header__burger-menu-social-link" href="#"> 
+                    <svg class="icon icon-wp" width="24" height="24">
+                      <use xlink:href="images/sprites/sprite-mono.svg#wp"></use>
+                    </svg></a></div>
+              </div>
+            </div>
+          </div>
           <div class="header__container grid-container js-emerging-block">
             <div class="header__block">
-              <button class="button-reset button-burger header__btn-burger"><span></span><span></span><span></span></button><a class="header__mobile-link" href="/">
+              <button class="button-reset button-burger header__btn-burger js-burger-open"><span></span><span></span><span></span></button><a class="header__mobile-link" href="/">
                 <svg class="icon icon-logo-second header__second-logo-icon" width="27" height="27">
                   <use xlink:href="images/sprites/sprite-mono.svg#logo-second"></use>
                 </svg></a><a class="logo" href="/" aria-label="Логотип Национальный исследовательский университет ИТМО">

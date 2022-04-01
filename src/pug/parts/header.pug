@@ -9,9 +9,31 @@
 
 header.header
   .site-container
+    .header__burger-menu.js-burger-menu
+      .header__burger-menu-inner
+        .header__burger-menu-buttons 
+          button.header__burger-menu-close.js-burger-close
+            +icon-mono("cross")(width="24" height="24")
+          a.header__burger-menu-phone-btn(href="#")
+            +icon-mono("phone")(width="24" height="24")
+          a.header__burger-menu-callback-btn(href="#" data-path="callback") Заполнить анкету
+        .header__burger-menu-content 
+          nav.header__burger-menu-nav 
+            a.header__burger-menu-nav-link(href="#") Организаторы
+            a.header__burger-menu-nav-link(href="#") Подготовка
+            a.header__burger-menu-nav-link(href="#") Призы
+            a.header__burger-menu-nav-link(href="#") Ответы на вопросы
+            a.header__burger-menu-nav-link(href="#") Контакты
+          .header__burger-menu-social 
+            a.header__burger-menu-social-link(href="#") 
+              +icon-mono("tg")(width="24" height="24")
+            a.header__burger-menu-social-link(href="#") 
+              +icon-mono("vk")(width="24" height="24")
+            a.header__burger-menu-social-link(href="#") 
+              +icon-mono("wp")(width="24" height="24")
     .header__container.grid-container.js-emerging-block
       .header__block
-        button.button-reset.button-burger.header__btn-burger
+        button.button-reset.button-burger.header__btn-burger.js-burger-open
           span
           span
           span

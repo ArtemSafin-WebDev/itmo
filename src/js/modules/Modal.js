@@ -78,6 +78,9 @@ export class Modal {
 	}
 
 	open() {
+		if (typeof window.closeMenu === 'function') {
+			window.closeMenu();
+		}
 		this.previousActiveElement = document.activeElement;
 
 		this.modal.style.setProperty('--transition-time', `${this.speed / 1000}s`);
