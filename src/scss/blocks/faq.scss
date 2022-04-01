@@ -9,7 +9,9 @@
   }
 
   &__content {
-    display: block;
+    @include mq(md) {
+      display: block;
+    }
   }
 
   &__small-legend {
