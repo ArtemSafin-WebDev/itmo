@@ -7,6 +7,7 @@ import daysLeft from './modules/daysLeft';
 import preloaderHide from './modules/preloaderHide';
 import sectionAnimation from './modules/sectionAnimation';
 import initTabs from './modules/initTabs';
+import gallerySliders from './modules/gallerySliders';
 
 window.onload = () => {
   setTimeout(() => {
@@ -20,4 +21,5 @@ documenReady(() => {
   daysLeft();
   sectionAnimation();
   initTabs();
+  gallerySliders();
 });

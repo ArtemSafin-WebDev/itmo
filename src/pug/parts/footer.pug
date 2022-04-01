@@ -1,3 +1,35 @@
 footer.footer
-	.site-container
-		h1 footer
+  .site-container
+    .footer_layer
+    .footer__container.grid-container
+      .footer__block
+        a.footer__link(href="tel:+7 (812) 312–32–69") +7 (812) 312–32–69
+        .footer__block-content
+          .footer__block-content-item
+            span.footer__small-legend Адрес
+          .footer__block-content-item
+            span.footer__small-legend Песочная наб., 14 лит.&nbsp;А, Санкт-Петербург
+        .footer__block-content
+          .footer__block-content-item
+            ul.social.footer__social
+              li.social__item
+                a.social__link(href="/" aria-label="Ссылка на телеграмм аккаунт" title="Ссылка на телеграмм аккаунт")
+                  +icon-mono("tg")(class="social__link-icon" width="14" height="14")
+              li.social__item
+                a.social__link(href="/" aria-label="Ссылка на страницу Вконтакте" title="Ссылка на страницу Вконтакте")
+                  +icon-mono("vk")(class="social__link-icon" width="14" height="14")
+              li.social__item
+                a.social__link(href="/" aria-label="Ссылка на аккаунт в WhatsUp" title="Ссылка на аккаунт в WhatsUp")
+                  +icon-mono("wp")(class="social__link-icon" width="14" height="14")
+          .footer__block-content-item
+            span.footer__small-legend Мы&nbsp;всегда ответим в&nbsp;мессенджерах и&nbsp;соц. сетях
+
+      .footer__block
+        img(src="images/footer-img.svg" alt="Молодой парень в синий толстовке машет рукой" class="footer__img")
+    .footer__copyright
+      p Информация © 1993–2022 Университет ИТМО
+      a(href="/") Политика по обработки персональных данных
+      a(href="/") Регламент проведения олимпиады
+      a.markweber(href="/")
+        span Разработка сайта
+        +icon-multi("markweber")(width="122" height="21" class="markweber__icon")

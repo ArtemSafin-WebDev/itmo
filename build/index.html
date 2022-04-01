@@ -339,9 +339,53 @@
             </div>
           </div>
         </section>
+        <section class="gallery section">
+          <div class="site-container gallery__container">
+            <div class="gallery__heading-wrapper grid-container">
+              <div class="gallery__heading-wrapper-block">
+                <h2 class="second-heading gallery__heading js-animated-heading"><span>Галерея</span> с&nbsp;мероприятий</h2>
+                <div class="slider-nav slider-nav_white gallery__nav-btns">
+                  <button class="slider-nav__btn button-reset js-gallery-btn-prev" aria-label="Предыдущий слайд">
+                    <svg class="icon icon-shevron-left slider-nav__btn-icon" width="11" height="29">
+                      <use xlink:href="images/sprites/sprite-mono.svg#shevron-left"></use>
+                    </svg>
+                  </button>
+                  <button class="slider-nav__btn button-reset js-gallery-btn-next" aria-label="Следующий слайд">
+                    <svg class="icon icon-shevron-right slider-nav__btn-icon" width="11" height="29">
+                      <use xlink:href="images/sprites/sprite-mono.svg#shevron-right"></use>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="gallery__sliders grid-container">
+              <div class="gallery__sliders-block"><span class="gallery__small-legend">Как проходят наши соревнования</span></div>
+              <div class="gallery__sliders-block">
+                <div class="gallery__slider-wrapper">
+                  <div class="gallery__slider swiper">
+                    <div class="swiper-wrapper"><img class="gallery__slider-img swiper-slide" src="images/gallery/img1.jpg" alt=""><img class="gallery__slider-img swiper-slide" src="images/gallery/img2.jpg" alt=""><img class="gallery__slider-img swiper-slide" src="images/gallery/img3.jpg" alt=""><img class="gallery__slider-img swiper-slide" src="images/gallery/img4.jpg" alt=""><img class="gallery__slider-img swiper-slide" src="images/gallery/img5.jpg" alt=""><img class="gallery__slider-img swiper-slide" src="images/gallery/img6.jpg" alt="">
+                    </div>
+                  </div>
+                </div>
+                <div class="gallery__slider-wrappers">
+                  <div class="gallery__slider-wrapper2">
+                    <div class="gallery__slider2 swiper">
+                      <div class="swiper-wrapper"><img class="gallery__slider-img swiper-slide" src="images/gallery/img6.jpg" alt=""><img class="gallery__slider-img swiper-slide" src="images/gallery/img5.jpg" alt=""><img class="gallery__slider-img swiper-slide" src="images/gallery/img4.jpg" alt=""><img class="gallery__slider-img swiper-slide" src="images/gallery/img3.jpg" alt=""><img class="gallery__slider-img swiper-slide" src="images/gallery/img2.jpg" alt=""><img class="gallery__slider-img swiper-slide" src="images/gallery/img1.jpg" alt=""></div>
+                    </div>
+                  </div>
+                  <div class="gallery__slider-wrapper3">
+                    <div class="gallery__slider3 swiper">
+                      <div class="swiper-wrapper"><img class="gallery__slider-img swiper-slide" src="images/gallery/img3.jpg" alt=""><img class="gallery__slider-img swiper-slide" src="images/gallery/img4.jpg" alt=""><img class="gallery__slider-img swiper-slide" src="images/gallery/img5.jpg" alt=""><img class="gallery__slider-img swiper-slide" src="images/gallery/img6.jpg" alt=""><img class="gallery__slider-img swiper-slide" src="images/gallery/img1.jpg" alt=""><img class="gallery__slider-img swiper-slide" src="images/gallery/img2.jpg" alt=""></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
         <section class="section faq">
           <div class="site-container faq__container">
-            <h2 class="faq__heading second-heading"><span>Ответы</span> на частые вопросы</h2>
+            <h2 class="faq__heading second-heading js-animated-heading"><span>Ответы</span> на частые вопросы</h2>
             <div class="faq__content grid-container">
               <div class="grid-container__block"><span class="faq__small-legend">Полезная информация</span></div>
               <div class="grid-container__block faq__item-container">
@@ -383,10 +427,47 @@
             </div>
           </div>
         </section>
+        <div class="index-map-container">
+          <section class="map"></section>
+        </div>
       </main>
       <footer class="footer">
         <div class="site-container">
-          <h1>footer</h1>
+          <div class="footer_layer"></div>
+          <div class="footer__container grid-container">
+            <div class="footer__block"><a class="footer__link" href="tel:+7 (812) 312–32–69">+7 (812) 312–32–69</a>
+              <div class="footer__block-content">
+                <div class="footer__block-content-item"><span class="footer__small-legend">Адрес</span></div>
+                <div class="footer__block-content-item"><span class="footer__small-legend">Песочная наб., 14 лит.&nbsp;А, Санкт-Петербург</span></div>
+              </div>
+              <div class="footer__block-content">
+                <div class="footer__block-content-item">
+                  <ul class="social footer__social">
+                    <li class="social__item"><a class="social__link" href="/" aria-label="Ссылка на телеграмм аккаунт" title="Ссылка на телеграмм аккаунт">
+                        <svg class="icon icon-tg social__link-icon" width="14" height="14">
+                          <use xlink:href="images/sprites/sprite-mono.svg#tg"></use>
+                        </svg></a></li>
+                    <li class="social__item"><a class="social__link" href="/" aria-label="Ссылка на страницу Вконтакте" title="Ссылка на страницу Вконтакте">
+                        <svg class="icon icon-vk social__link-icon" width="14" height="14">
+                          <use xlink:href="images/sprites/sprite-mono.svg#vk"></use>
+                        </svg></a></li>
+                    <li class="social__item"><a class="social__link" href="/" aria-label="Ссылка на аккаунт в WhatsUp" title="Ссылка на аккаунт в WhatsUp">
+                        <svg class="icon icon-wp social__link-icon" width="14" height="14">
+                          <use xlink:href="images/sprites/sprite-mono.svg#wp"></use>
+                        </svg></a></li>
+                  </ul>
+                </div>
+                <div class="footer__block-content-item"><span class="footer__small-legend">Мы&nbsp;всегда ответим в&nbsp;мессенджерах и&nbsp;соц. сетях</span></div>
+              </div>
+            </div>
+            <div class="footer__block"><img class="footer__img" src="images/footer-img.svg" alt="Молодой парень в синий толстовке машет рукой"></div>
+          </div>
+          <div class="footer__copyright">
+            <p>Информация © 1993–2022 Университет ИТМО</p><a href="/">Политика по обработки персональных данных</a><a href="/">Регламент проведения олимпиады</a><a class="markweber" href="/"><span>Разработка сайта</span>
+              <svg class="icon icon-markweber markweber__icon" width="122" height="21">
+                <use xlink:href="images/sprites/sprite-multi.svg#markweber"></use>
+              </svg></a>
+          </div>
         </div>
       </footer>
     </div>

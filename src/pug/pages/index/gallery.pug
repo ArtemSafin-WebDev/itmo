@@ -1,0 +1,39 @@
+section.gallery.section
+  .site-container.gallery__container
+    .gallery__heading-wrapper.grid-container
+      .gallery__heading-wrapper-block
+        h2.second-heading.gallery__heading.js-animated-heading
+          | <span>Галерея</span> с&nbsp;мероприятий
+        .slider-nav.slider-nav_white.gallery__nav-btns
+          button.slider-nav__btn.button-reset.js-gallery-btn-prev(aria-label="Предыдущий слайд")
+            +icon-mono("shevron-left")(width="11" height="29" class="slider-nav__btn-icon")
+          button.slider-nav__btn.button-reset.js-gallery-btn-next(aria-label="Следующий слайд")
+            +icon-mono("shevron-right")(width="11" height="29" class="slider-nav__btn-icon")
+    .gallery__sliders.grid-container
+      .gallery__sliders-block
+        span.gallery__small-legend Как проходят наши соревнования
+      .gallery__sliders-block
+        .gallery__slider-wrapper
+          .gallery__slider.swiper
+            .swiper-wrapper
+              - for (let i = 1; i < 7; i++ )
+                img.gallery__slider-img.swiper-slide(src=`images/gallery/img${i}.jpg` alt="")
+        .gallery__slider-wrappers
+          .gallery__slider-wrapper2
+            .gallery__slider2.swiper
+              .swiper-wrapper
+                img.gallery__slider-img.swiper-slide(src=`images/gallery/img6.jpg` alt="")
+                img.gallery__slider-img.swiper-slide(src=`images/gallery/img5.jpg` alt="")
+                img.gallery__slider-img.swiper-slide(src=`images/gallery/img4.jpg` alt="")
+                img.gallery__slider-img.swiper-slide(src=`images/gallery/img3.jpg` alt="")
+                img.gallery__slider-img.swiper-slide(src=`images/gallery/img2.jpg` alt="")
+                img.gallery__slider-img.swiper-slide(src=`images/gallery/img1.jpg` alt="")
+          .gallery__slider-wrapper3
+            .gallery__slider3.swiper
+              .swiper-wrapper
+                img.gallery__slider-img.swiper-slide(src=`images/gallery/img3.jpg` alt="")
+                img.gallery__slider-img.swiper-slide(src=`images/gallery/img4.jpg` alt="")
+                img.gallery__slider-img.swiper-slide(src=`images/gallery/img5.jpg` alt="")
+                img.gallery__slider-img.swiper-slide(src=`images/gallery/img6.jpg` alt="")
+                img.gallery__slider-img.swiper-slide(src=`images/gallery/img1.jpg` alt="")
+                img.gallery__slider-img.swiper-slide(src=`images/gallery/img2.jpg` alt="")
