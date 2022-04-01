@@ -21,6 +21,9 @@
 
     @include mq(sm) {
       margin-bottom: 5.2rem;
+      width: 100%;
+      height: auto;
+      margin-bottom: 3rem;
     }
   }
 

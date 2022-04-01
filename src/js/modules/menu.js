@@ -38,4 +38,12 @@ export default () => {
       closeMenu();
     }
   });
+
+  menu.addEventListener('click', function(event) {
+    if (event.target === this) {
+      if (menuOpen) {
+        closeMenu();
+      }
+    }
+  })
 };
