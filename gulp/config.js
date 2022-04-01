@@ -22,8 +22,6 @@ const config = {
     fonts: `${destPath}/fonts`,
     images: `${destPath}/images`,
     favicons: `${destPath}/favicon`,
-    iconsMono: `${destPath}/assets/icons/mono`,
-    iconsMulti: `${destPath}/assets/icons/multi`,
   },
 
   setEnv() {
