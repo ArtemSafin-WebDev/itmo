@@ -33,6 +33,7 @@ body {
 	color: var(--color-grey-900);
 	background-color: var(--color-bg);
   font: var(--font-body-M);
+  -webkit-font-smoothing: antialiased;
 }
 
 img {

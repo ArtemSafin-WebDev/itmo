@@ -49,7 +49,7 @@
                   <li class="header__nav-item"><a class="header__nav-link" href="/">Контакты</a></li>
                 </ul>
               </nav>
-              <button class="button-reset button header__btn"><span class="button__txt">Заполнить анкету</span></button>
+              <button class="button-reset button header__btn" data-path="callback"><span class="button__txt">Заполнить анкету</span></button>
             </div>
           </div>
         </div>
@@ -79,7 +79,7 @@
                   </div>
                   <div class="intro__content-regulation-wrapper js-emerging-block2">
                     <div class="intro__content-btn-wrapper">
-                      <button class="button-reset button intro__content-btn"><span class="button__txt">Заполнить анкету</span></button>
+                      <button class="button-reset button intro__content-btn" data-path="callback"><span class="button__txt">Заполнить анкету</span></button>
                       <div class="intro__content-days-wrapper">
                         <p class="intro__content-days-left-txt">Дней до мероприятия</p><span class="intro__content-days-left js-days-left">40</span>
                       </div>
@@ -586,7 +586,7 @@
                 <div class="shield__blocks-item">
                   <p>Для участия в олимпиаде достаточно заполнить анкету регистрации на всю команду.</p>
                   <p>Вам останется только следить за обновлениями!</p>
-                  <button class="button-reset button shield__btn"><span class="button__txt">Заполнить анкету</span></button>
+                  <button class="button-reset button shield__btn" data-path="callback"><span class="button__txt">Заполнить анкету</span></button>
                 </div>
               </div>
             </div>
@@ -805,6 +805,13 @@
           </div>
         </div>
       </footer>
+    </div>
+    <div class="modal"><script src="https://yastatic.net/s3/frontend/forms/_/embed.js"></script>
+      <div class="modal__container" data-target="callback">
+        <div class="modal__content">
+          <button class="button-reset modal__close-btn modal-close"><span></span><span></span></button><iframe src="https://forms.yandex.ru/u/623b30c7f8948d8b538a07a3/?iframe=1" frameborder="0" name="ya-form-623b30c7f8948d8b538a07a3" width="650"></iframe>
+        </div>
+      </div>
     </div>
   </body>
   <script src="js/main.js?v=0.0.0.0"></script>

@@ -1,5 +1,4 @@
 import gsap from "gsap";
-import startAnim from './startAnim';
 
 export default () => {
   const preloader = document.querySelector(".preloader");
@@ -12,5 +11,5 @@ export default () => {
       yPercent: -100,
       duration: 0.7
     }, '-=0.1')
-    .to(preloader, {autoAlpha: 0, onComplete: startAnim() });
+    .to(preloader, {autoAlpha: 0 });
 };

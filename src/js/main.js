@@ -8,12 +8,19 @@ import preloaderHide from './modules/preloaderHide';
 import sectionAnimation from './modules/sectionAnimation';
 import initTabs from './modules/initTabs';
 import gallerySliders from './modules/gallerySliders';
+import startAnim from './modules/startAnim';
+import initModal from './modules/initModal';
 
 window.onload = () => {
   setTimeout(() => {
     preloaderHide();
   }, 400);
+
+  setTimeout(() => {
+    startAnim();
+  }, 500);
 };
+
 
 documenReady(() => {
   lazyIMages();
@@ -22,4 +29,5 @@ documenReady(() => {
   sectionAnimation();
   initTabs();
   gallerySliders();
+  initModal();
 });
