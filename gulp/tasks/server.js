@@ -10,6 +10,7 @@ const server = (callback) => {
       `${config.dest.html}/*.html`,
       `${config.dest.css}/*.css`,
       `${config.dest.js}/*.js`,
+      `./build/docs/**/*`,
       {
         match: `${config.dest.images}/**/*`,
         fn() {

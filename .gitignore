@@ -5,7 +5,6 @@ package-lock.json
 /node_modules/
 *.ai
 *.log
-*.pdf
 /**/*.psd
 /.git/
 /**/_backstage
