@@ -1,0 +1,52 @@
+* {
+  @include mq(sm) {
+    filter: none;
+  }
+}
+.intro_blur,
+.intro_blur2,
+.intro_bg-svg,
+.common-info-block_layer,
+.common-info-block_layer2,
+.about-org_layer,
+.footer_layer {
+  @include mq(sm) {
+    display: none;
+  }
+}
+
+.intro__container {
+  @include mq(sm) {
+    background-image: url("../images/intro-bg-mobile.webp");
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-position: center top;
+  }
+}
+
+.common-info-block > svg ~ .site-container {
+  @include mq(sm) {
+    background-image: url("../images/why-mobile-bg.webp");
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+  }
+}
+
+.about-org {
+  @include mq(sm) {
+    background-image: url("../images/organization-mobile-bg.webp");
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-position: center top;
+  }
+}
+
+
+.page-wrapper {
+    width: 100%;
+}
+
+body {
+    width: 100%;
+}

@@ -12,7 +12,9 @@ export default () => {
   const openMenu = () => {
     if (menuOpen) return;
     document.body.classList.add("mobile-menu-open");
-    disableBodyScroll(menu);
+    disableBodyScroll(menu, {
+      reserveScrollBarGap: false,
+    });
     menuOpen = true;
   };
   const closeMenu = () => {
@@ -39,11 +41,11 @@ export default () => {
     }
   });
 
-  menu.addEventListener('click', function(event) {
+  menu.addEventListener("click", function (event) {
     if (event.target === this) {
       if (menuOpen) {
         closeMenu();
       }
     }
-  })
+  });
 };

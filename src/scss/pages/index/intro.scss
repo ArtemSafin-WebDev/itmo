@@ -32,7 +32,11 @@
     z-index: -1;
     width: 73.6rem;
     height: 62.7rem;
-    background: linear-gradient(180deg, rgba(198, 183, 242, 0.2) 0%, rgba(52, 68, 222, 0.2) 100%);
+    background: linear-gradient(
+      180deg,
+      rgba(198, 183, 242, 0.2) 0%,
+      rgba(52, 68, 222, 0.2) 100%
+    );
     filter: blur(186px);
   }
 
@@ -347,3 +351,4 @@
     }
   }
 }
+
