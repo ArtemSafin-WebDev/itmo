@@ -1,10 +1,11 @@
-import { gsap } from "gsap";
-import { ScrollToPlugin } from "gsap/ScrollToPlugin";
+import gsap from "gsap";
+import { ScrollToPlugin } from "gsap/dist/ScrollToPlugin";
 
 gsap.registerPlugin(ScrollToPlugin);
 
 export default function anchorLinks() {
-  const OFFSET = 80;
+  const header = document.querySelector('.header')
+  const OFFSET = 120;
   const DURATION = 2;
   const scrollByHash = (hash) => {
     const elementToScroll = document.querySelector(hash);
@@ -24,7 +25,7 @@ export default function anchorLinks() {
         scrollTo: {
           y: elementToScroll,
           autoKill: false,
-          offsetY: OFFSET,
+          offsetY: header ? header.offsetHeight * 1.3 : OFFSET,
         },
       });
     } else {

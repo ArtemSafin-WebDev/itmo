@@ -12,6 +12,8 @@ import startAnim from "./modules/startAnim";
 import initModal from "./modules/initModal";
 import map from "./modules/map";
 import menu from "./modules/menu";
+import stickyHeader from "./modules/stickyHeader";
+import anchorLinks from "./modules/anchorLinks";
 
 window.onload = () => {
   setTimeout(() => {
@@ -33,4 +35,6 @@ documenReady(() => {
   initModal();
   map();
   menu();
+  anchorLinks();
+  stickyHeader();
 });

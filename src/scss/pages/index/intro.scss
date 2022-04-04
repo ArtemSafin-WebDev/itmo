@@ -66,6 +66,7 @@
     text-transform: uppercase;
     margin-bottom: 3rem;
     overflow: hidden;
+    letter-spacing: -0.07em;
 
     @include mq(md) {
       font: var(--font-title-1);
@@ -139,6 +140,11 @@
       font: var(--font-roboto-M);
       max-width: 100%;
       margin-bottom: 7.5rem;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 2rem;
+      letter-spacing: -0.02em;
+      line-height: 100%;
     }
   }
 
@@ -292,8 +298,9 @@
     margin-left: 3.6rem;
 
     &:hover {
+      color: #9d9ea4;
       .icon {
-        stroke: var(--color-blue-700);
+        stroke: #9d9ea4;
       }
     }
 
@@ -343,7 +350,7 @@
   }
 
   &__content-block-mobile-item {
-    margin-right: 1rem;
+    margin-right: 3rem;
     flex-shrink: 0;
 
     &:last-child {

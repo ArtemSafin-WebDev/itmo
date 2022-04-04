@@ -56,11 +56,18 @@
 
   &__btn {
     padding: 3.2rem 6.4rem 3.6rem;
+    padding-right: 3.6rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
     width: 100%;
     cursor: pointer;
+
+    &:hover {
+      .faq__btn-icon {
+        border-color: #37387b;
+      }
+    }
 
     &.mod-open {
       .faq__btn-icon {
@@ -96,7 +103,7 @@
     border-radius: 50%;
     border: 1px solid var(--color-grey-300);
     flex-shrink: 0;
-
+    transition: border-color .2s;
     @include mq(sm) {
       width: 2.8rem;
       height: 2.8rem;

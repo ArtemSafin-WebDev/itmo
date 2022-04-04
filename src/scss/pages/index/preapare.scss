@@ -75,8 +75,8 @@
     flex-shrink: 0;
 
     &:hover {
-      p {
-        color: var(--color-blue-700);
+      .preapare__link-icon-wrapper {
+        background-color: #55B2E5;
       }
     }
 
@@ -112,6 +112,7 @@
     background-color: var(--color-purple-900);
     margin-right: 2.8rem;
     flex-shrink: 0;
+    transition: background-color .2s;
   }
 
   &__link-icon {

@@ -8,6 +8,13 @@
   // overflow: hidden;
   margin-top: 2rem;
 
+
+ 
+  z-index: 25;
+
+  position: relative;
+
+
   @include mq(sm) {
     height: 3.5rem;
   }
@@ -16,6 +23,7 @@
     background-color: var(--color-white);
     border-radius: 12.3rem;
     padding: 1.2rem 1.6rem 1.2rem;
+    
 
     @include mq(lg) {
       background-color: transparent;
@@ -143,12 +151,12 @@
     z-index: 300;
     opacity: 0;
     visibility: hidden;
-    transition: opacity .4s, visibility 0s linear .4s;
+    transition: opacity 0.4s, visibility 0s linear 0.4s;
 
     .mobile-menu-open & {
       opacity: 1;
       visibility: inherit;
-      transition: opacity .4s, visibility .4s;
+      transition: opacity 0.4s, visibility 0.4s;
     }
   }
 }
@@ -290,5 +298,12 @@
     width: 1.8rem;
     height: 1.8rem;
     fill: #21222e;
+  }
+}
+
+.header__mobile-link {
+  display: none;
+  @include mq(sm) {
+    display: inline-block;
   }
 }

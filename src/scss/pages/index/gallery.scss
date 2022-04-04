@@ -117,3 +117,10 @@
     object-fit: cover;
   }
 }
+
+.gallery__slider-wrapper,
+.gallery__slider {
+  @include mq(sm) {
+    overflow: visible !important;
+  }
+}
