@@ -53,3 +53,20 @@ body {
 html {
   scroll-behavior: smooth;
 }
+
+.social__link {
+  border-color: #a4a5bb;
+  transition: border-color 0.2s;
+
+  .social__link-icon {
+    fill: #a4a5bb;
+    transition: fill 0.2s;
+  }
+  &:hover {
+    border-color: var(--color-grey-900);
+
+    .social__link-icon {
+      fill: var(--color-grey-900) !important;
+    }
+  }
+}

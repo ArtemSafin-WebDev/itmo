@@ -107,13 +107,7 @@
   }
 
   &__social {
-    .social__link {
-      border-color: var(--color-grey-900);
-
-      .icon {
-        fill: var(--color-grey-900);
-      }
-    }
+   
 
     &._mobile {
       display: none;

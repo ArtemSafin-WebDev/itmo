@@ -41,22 +41,25 @@ section.intro.section
             .intro__content-organizers-item
               p
                 | Международный научно-образовательный центр &laquo;Безопасность и&nbsp;надежность критических цифровых технологий&raquo; Университета ИТМО
-              +icon-mono("logo-second")(width="31" height="31" class="intro__content-organizers-icon")
+              .intro__content-organizers-logo-wrapper
+                +icon-mono("logo-second")(width="31" height="31" class="intro__content-organizers-icon")
             .intro__content-organizers-item
               p
-                | АРСИБ&nbsp;&mdash; Ассоциация руководителей служб информационной безопасности
-              +icon-mono("logo-arsib")(width="60" height="31" class="intro__content-organizers-icon")
+                | АРСИБ&nbsp;&mdash; Ассоциация руководителей служб информационной безопасности #[span.only-mobile (Соорганизатор)]
+              .intro__content-organizers-logo-wrapper
+                +icon-mono("logo-arsib")(width="60" height="31" class="intro__content-organizers-icon")
+                .intro__content-organizers-logo-remark Соорганизатор
         .intro__content-block-item
           p.intro__content-adress Санкт-Петербург, Песочная набережная, д. 14
           a.intro__content-link(href="tel:+78123123269") +7 (812) 312–32–69
           .intro__content-socials-wrapper
             ul.social
               li.social__item
-                a.social__link(href="/" aria-label="Ссылка на телеграмм аккаунт" title="Ссылка на телеграмм аккаунт")
+                a.social__link(href="https://t.me/fbitsechub" aria-label="Ссылка на телеграмм аккаунт" title="Ссылка на телеграмм аккаунт" target="_blank")
                   +icon-mono("tg")(class="social__link-icon" width="14" height="14")
               li.social__item
-                a.social__link(href="/" aria-label="Ссылка на страницу Вконтакте" title="Ссылка на страницу Вконтакте")
+                a.social__link(href="https://vk.com/bit.itmo" aria-label="Ссылка на страницу Вконтакте" title="Ссылка на страницу Вконтакте" target="_blank")
                   +icon-mono("vk")(class="social__link-icon" width="14" height="14")
-              li.social__item
-                a.social__link(href="/" aria-label="Ссылка на аккаунт в WhatsUp" title="Ссылка на аккаунт в WhatsUp")
-                  +icon-mono("wp")(class="social__link-icon" width="14" height="14")
+              //- li.social__item
+              //-   a.social__link(href="/" aria-label="Ссылка на аккаунт в WhatsUp" title="Ссылка на аккаунт в WhatsUp")
+              //-     +icon-mono("wp")(class="social__link-icon" width="14" height="14")
