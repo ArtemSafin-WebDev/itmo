@@ -19,11 +19,11 @@ header.header
           a.header__burger-menu-callback-btn(href="#" data-path="callback") Заполнить анкету
         .header__burger-menu-content 
           nav.header__burger-menu-nav 
-            a.header__burger-menu-nav-link(href="#") Организаторы
-            a.header__burger-menu-nav-link(href="#") Подготовка
-            a.header__burger-menu-nav-link(href="#") Призы
-            a.header__burger-menu-nav-link(href="#") Ответы на вопросы
-            a.header__burger-menu-nav-link(href="#") Контакты
+            a.header__burger-menu-nav-link(href="#organizators") Организаторы
+            a.header__burger-menu-nav-link(href="#prepare") Подготовка
+            a.header__burger-menu-nav-link(href="#prizes") Призы
+            a.header__burger-menu-nav-link(href="#faq") Ответы на вопросы
+            a.header__burger-menu-nav-link(href="#contacts") Контакты
           .header__burger-menu-social 
             a.header__burger-menu-social-link(href="#") 
               +icon-mono("tg")(width="24" height="24")
@@ -48,7 +48,14 @@ header.header
       .header__block
         nav.header__nav
           ul.header__nav-list
-            for item in nav_arr
-              li.header__nav-item
-                a.header__nav-link(href="/")= item
+            li.header__nav-item
+              a.header__nav-link(href="#organizators") Организаторы
+            li.header__nav-item
+              a.header__nav-link(href="#prepare") Подготовка
+            li.header__nav-item
+              a.header__nav-link(href="#prizes") Призы
+            li.header__nav-item
+              a.header__nav-link(href="#faq") Ответы на вопросы
+            li.header__nav-item
+              a.header__nav-link(href="#contacts") Контакты
         +button("Заполнить анкету")(class="header__btn")

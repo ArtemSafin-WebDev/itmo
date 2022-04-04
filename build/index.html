@@ -37,7 +37,7 @@
                   </svg></a><a class="header__burger-menu-callback-btn" href="#" data-path="callback">Заполнить анкету</a>
               </div>
               <div class="header__burger-menu-content"> 
-                <nav class="header__burger-menu-nav"> <a class="header__burger-menu-nav-link" href="#">Организаторы</a><a class="header__burger-menu-nav-link" href="#">Подготовка</a><a class="header__burger-menu-nav-link" href="#">Призы</a><a class="header__burger-menu-nav-link" href="#">Ответы на вопросы</a><a class="header__burger-menu-nav-link" href="#">Контакты</a></nav>
+                <nav class="header__burger-menu-nav"> <a class="header__burger-menu-nav-link" href="#organizators">Организаторы</a><a class="header__burger-menu-nav-link" href="#prepare">Подготовка</a><a class="header__burger-menu-nav-link" href="#prizes">Призы</a><a class="header__burger-menu-nav-link" href="#faq">Ответы на вопросы</a><a class="header__burger-menu-nav-link" href="#contacts">Контакты</a></nav>
                 <div class="header__burger-menu-social"> <a class="header__burger-menu-social-link" href="#"> 
                     <svg class="icon icon-tg" width="24" height="24">
                       <use xlink:href="images/sprites/sprite-mono.svg#tg"></use>
@@ -69,11 +69,11 @@
             <div class="header__block">
               <nav class="header__nav">
                 <ul class="header__nav-list">
-                  <li class="header__nav-item"><a class="header__nav-link" href="/">Организаторы</a></li>
-                  <li class="header__nav-item"><a class="header__nav-link" href="/">Подготовка</a></li>
-                  <li class="header__nav-item"><a class="header__nav-link" href="/">Призы</a></li>
-                  <li class="header__nav-item"><a class="header__nav-link" href="/">Ответы на вопросы</a></li>
-                  <li class="header__nav-item"><a class="header__nav-link" href="/">Контакты</a></li>
+                  <li class="header__nav-item"><a class="header__nav-link" href="#organizators">Организаторы</a></li>
+                  <li class="header__nav-item"><a class="header__nav-link" href="#prepare">Подготовка</a></li>
+                  <li class="header__nav-item"><a class="header__nav-link" href="#prizes">Призы</a></li>
+                  <li class="header__nav-item"><a class="header__nav-link" href="#faq">Ответы на вопросы</a></li>
+                  <li class="header__nav-item"><a class="header__nav-link" href="#contacts">Контакты</a></li>
                 </ul>
               </nav>
               <button class="button-reset button header__btn" data-path="callback"><span class="button__txt">Заполнить анкету</span></button>
@@ -518,7 +518,7 @@
             </div>
           </div>
         </section>
-        <section class="section preapare">
+        <section class="section preapare" id="prepare">
           <div class="site-container preapare__container">
             <h2 class="visually-hidden">как подготовиться</h2>
             <svg class="icon icon-how-to-prepare preapare__svg-heading" width="1559" height="132">
@@ -554,7 +554,7 @@
             </div>
           </div>
         </section>
-        <section class="section common-info-block">
+        <section class="section common-info-block" id="prizes">
           <svg class="icon icon-bg-layer-right common-info-block_svg-layer" width="1061" height="924">
             <use xlink:href="images/sprites/sprite-mono.svg#bg-layer-right"></use>
           </svg>
@@ -583,7 +583,7 @@
             </div>
           </div>
         </section>
-        <section class="section common-info-block">
+        <section class="section common-info-block" id="prizes">
           <div class="site-container">
             <h2 class="second-heading common-info-block__heading js-animated-heading"><span> Что </span> принести с собой?</h2>
             <div class="common-info-block__container grid-container">
@@ -619,7 +619,7 @@
             </div>
           </div>
         </section>
-        <section class="section about-org">
+        <section class="section about-org" id="organizators">
           <div class="about-org_layer"></div>
           <div class="site-container about-org__contaoner">
             <h2 class="visually-hidden">об организаторах</h2>
@@ -730,7 +730,7 @@
             </div>
           </div>
         </section>
-        <section class="section faq">
+        <section class="section faq" id="faq">
           <div class="site-container faq__container">
             <h2 class="faq__heading second-heading js-animated-heading"><span>Ответы</span> на частые вопросы</h2>
             <div class="faq__content grid-container">
@@ -778,7 +778,7 @@
           <section class="map js-map" data-coords="59.972938, 30.295099" data-center="59.972938, 30.295099"></section>
         </div>
       </main>
-      <footer class="footer">
+      <footer class="footer" id="contacts">
         <div class="site-container">
           <div class="footer_layer"></div>
           <div class="footer__container grid-container">

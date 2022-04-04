@@ -48,4 +48,15 @@ export default () => {
       }
     }
   });
+
+  const navLinks = Array.from(
+    document.querySelectorAll(".header__burger-menu-nav-link")
+  );
+
+  navLinks.forEach((link) =>
+    link.addEventListener("click", (event) => {
+      // event.preventDefault();
+      closeMenu();
+    })
+  );
 };
