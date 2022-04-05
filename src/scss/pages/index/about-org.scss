@@ -126,3 +126,19 @@
     stroke: var(--color-grey-900);
   }
 }
+
+
+.about-org__oragnization-remark {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.2rem;
+  line-height: 110%;
+  color: rgba(#21222e, 0.4);
+  margin-top: -2.5rem;
+  margin-bottom: 4rem;
+
+  @include mq(sm) {
+    margin-bottom: 2.4rem;
+    margin-top: -1rem;
+  }
+}
